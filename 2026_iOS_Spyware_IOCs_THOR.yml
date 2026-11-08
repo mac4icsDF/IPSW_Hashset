@@ -1,0 +1,2030 @@
+title: "2026 iOS Spyware and Malware IOCs"
+id: cf6858cd-fef7-4d31-82af-1e7da629fc5c
+description: "iOS-only malware and spyware IOCs compiled from 2026 public/OSINT sources. Covers Pegasus, Predator, Candiru/AdFection, Coruna, DarkSword/P7, SparkCat/SparkKitty, FakeWallet, Packagist, Graphite, Operation Triangulation, and related CVEs."
+date: 2026-11-07
+modified: 2026-11-07
+version: "2.0.1"
+tags:
+  - ios
+  - spyware
+  - mobile
+  - 2026
+references:
+  - https://citizenlab.ca
+  - https://docs.mvt.re/en/latest/iocs/
+  - https://www.amnesty.org/en/tech/
+  - https://cloud.google.com/blog/topics/threat-intelligence/
+  - https://www.iverify.com/blog
+  - https://www.lookout.com/threat-intelligence
+  - https://securelist.com
+  - https://report-uri.com/blog
+  - https://socket.dev/blog
+  - https://zimperium.com/blog
+  - https://censys.io
+  - https://www.nextron-systems.com/thor/
+iocs:
+  hashes:
+    - value: 0752edcf5fd61b0e4a1e01371ba605fd
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 0aa1f8f36980f3dfe8884f1c6f5d6ddc
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 0b7891114d3b322ee863e4eef94d8523
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 0d09c4f956bb734586cee85887ed5407
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 0d7ed6df0e0cd9b5b38712d17857c824
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 1334417664270db20af705f422878c53c8378203
+      score: 80
+      description: "Coruna MD5 - Coruna payload module hash byte-identical across Censys captures (Source: Censys)"
+    - value: 149785056bf16a9c6964c0ea4217b42b
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 19733e0dfa804e3676f97eff90f2e467
+      score: 80
+      description: "FakeWallet MD5 - Phishing HTML for infected Ledger Live app (Source: Kaspersky)"
+    - value: 1b85522b964b38de67c5d2b670bb30b1
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 21a257e3b51561e5ff20005ca8f0da65
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 21ef7a14fee3f64576f5780a637c57d1
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 2accfc13aaf4fa389149c0a03ce0ee4b
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 2b43b8c757c872a19a30dcdcff45e4d8
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 2d2b25279ef9365420acec120b98b3b4
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 307a64e335065c00c19e94c1f0a896f2
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 3388b5ea9997328eb48977ab351ca8de
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 4126348d783393dd85ede3468e48405d
+      score: 80
+      description: "FakeWallet MD5 - Infected cryptowallet IPA file (Source: Kaspersky)"
+    - value: 44bc648d1c10bc88f9b6ad78d3e3f967
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 489217cca81823af56d141c985bb9b2c
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 5b2e4ea7ab929c766c9c7359995cdde0
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 5bdae6cb778d002c806bb7ed130985f3
+      score: 80
+      description: "FakeWallet MD5 - Malicious dylib (Source: Kaspersky)"
+    - value: 5e47604058722dae03f329a2e6693485
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 6d39cd8421591fbb0cc2a0bce4d0357d
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 6fe6885b8f6606b25178822d7894ac35
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: 79fe383f0963ae741193989c12aefacc
+      score: 80
+      description: "FakeWallet MD5 - Infected cryptowallet IPA file (Source: Kaspersky)"
+    - value: 7b4c61ff418f6fe80cf8adb474278311
+      score: 80
+      description: "FakeWallet MD5 - Malicious dylib (Source: Kaspersky)"
+    - value: 7e6324efc3acdb423f8e3b50edd5c5e5
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 7e678ca2f01dc853e85d13924e6c8a45
+      score: 80
+      description: "FakeWallet MD5 - Infected cryptowallet IPA file (Source: Kaspersky)"
+    - value: 84c81a5e49291fe60eb9f5c1e2ac184b
+      score: 80
+      description: "FakeWallet MD5 - Malicious React Native application (Source: Kaspersky)"
+    - value: 8c9a93e829cba8c4607a7265e6988646
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 8cbd34393d1d54a90be3c2b53d8fc17a
+      score: 80
+      description: "FakeWallet MD5 - Malicious dylib (Source: Kaspersky)"
+    - value: 8cfc8081559008585b4e4a23cd4e1a7f
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 8d45a67b648d2cb46292ff5041a5dd44
+      score: 80
+      description: "FakeWallet MD5 - Infected cryptowallet IPA file (Source: Kaspersky)"
+    - value: 931085b04c0b6e23185025b69563d2ce
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: 931399987a261df91b21856940479634
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 9aeaf9a485a60dc3de0b26b060bc8218
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: a4cca2431aa35bb68581a4e848804598
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: b0976d46970314532bc118f522bb8a6f
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: b0eda03d7e4265fe280360397c042494
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: b3085cd623b57fd6561e964d6fd73413
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: b639f7f81a8faca9c62fd227fef5e28c
+      score: 80
+      description: "FakeWallet MD5 - Infected cryptowallet IPA file (Source: Kaspersky)"
+    - value: bafba3d044a4f674fc9edc67ef6b8a6b
+      score: 80
+      description: "FakeWallet MD5 - Infected cryptowallet IPA file (Source: Kaspersky)"
+    - value: be9e0d516f59ae57f5553bcc3cf296d1
+      score: 80
+      description: "FakeWallet MD5 - Malicious dylib (Source: Kaspersky)"
+    - value: c6a7568134622007de026d22257502d5
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: d138a63436b4dd8c5a55d184e025ef99
+      score: 80
+      description: "FakeWallet MD5 - Malicious dylib (Source: Kaspersky)"
+    - value: d48b580718b0e1617afc1dec028e9059
+      score: 80
+      description: "FakeWallet MD5 - Infected cryptowallet IPA file (Source: Kaspersky)"
+    - value: e5186be781f870377b6542b3cecfb622
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: ec068e0fc6ffda97685237d8ab8a0f56
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: f0460bdca0f04d3bd4fc59d73b52233b
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: f0815908bafd88d71db660723b65fba4
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib) (Source: Kaspersky)"
+    - value: f10a4fdffc884089ae93b0372ff9d5d1
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: f9ab4769b63a571107f2709b5b14e2bc
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: fd0dc5d4bba740c7b4cc78c4b19a5840
+      score: 80
+      description: "FakeWallet MD5 - Malicious dylib (Source: Kaspersky)"
+    - value: fd4558a9b629b5abe65a649b57bef20c
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Malicious iOS framework (fake AFNetworking/Alamofire) (Source: Kaspersky)"
+    - value: fe0868c4f40cbb42eb58af121570e64d
+      score: 80
+      description: "SparkCat/SparkKitty MD5 - Infected iOS app (Source: Kaspersky)"
+    - value: 023e5fb71923cfa2088b9a48ad8566ff7ac92a99630add0629a5edf4679888de
+      score: 80
+      description: "Coruna SHA256 - Tonkeeper module (com.jbig.tonkeeper) (Source: Google Threat Intelligence Group)"
+    - value: 05b5e4070b3b8a130b12ea96c5526b4615fcae121bb802b1a10c3a7a70f39901
+      score: 80
+      description: "Coruna SHA256 - Coinbase wallet module (org.toshi.distribution) (Source: Google Threat Intelligence Group)"
+    - value: 0dff17e3aa12c4928273c70a2e0a6fff25d3e43c0d1b71056abad34a22b03495
+      score: 80
+      description: "Coruna SHA256 - Coin98 wallet module (coin98.crypto.finance.insights) (Source: Google Threat Intelligence Group)"
+    - value: 10bd8f2f8bb9595664bb9160fbc4136f1d796cb5705c551f7ab8b9b1e658085c
+      score: 80
+      description: "Coruna SHA256 - Exodus wallet module (exodus-movement.exodus) (Source: Google Threat Intelligence Group)"
+    - value: 18394fcc096344e0730e49a0098970b1c53c137f679cff5c7ff8902e651cd8a3
+      score: 80
+      description: "Coruna SHA256 - SpringBoard module (com.apple.springboard) (Source: Google Threat Intelligence Group)"
+    - value: 1fb9dedf1de81d387eff4bd5e747f730dd03c440157a66f20fdb5e95f64318c0
+      score: 80
+      description: "Coruna SHA256 - Coruna module (com.sixdays.trust) (Source: Google Threat Intelligence)"
+    - value: 225377bb96b9ec642042d6e6379d3ac908edd08dc5dca6df7ac5f68d407b6e16
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 loader.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: 255869de85e2a171993fc5eb8a556d873a1b8966e040f6f55926f2fa2d595cc8
+      score: 80
+      description: "Candiru_AdFection SHA256 - Candiru Windows DLL with C&C hardcoded (VirusTotal) (Source: Citizen Lab)"
+    - value: 25a9b004cf61fb251c8d4024a8c7383a86cb30f60aa7d59ca53ce9460fcfb7de
+      score: 80
+      description: "Coruna SHA256 - MetaMask wallet module (io.metamask.MetaMask) (Source: Google Threat Intelligence Group)"
+    - value: 2a9d21ca07244932939c6c58699448f2147992c1f49cd3bc7d067bd92cb54f3a
+      score: 80
+      description: "Coruna SHA256 - Coruna implant (com.apple.assistd) (Source: Google Threat Intelligence)"
+    - value: 2e5a56beb63f21d9347310412ae6efb29fd3db2d3a3fc0798865a29a3c578d35
+      score: 80
+      description: "DarkSword SHA256 - Extracted GHOSTBLADE sample (UNC6353) (Source: Google Threat Intelligence)"
+    - value: 2ffb35e3f9e55286a930fb887e73764a913166648135fe0ca7551736d97d7bfa
+      score: 80
+      description: "APT29_DarkSword_Derivative SHA256 - Class B Stage 2 iOS exploit chain (Source: Sekoia)"
+    - value: 30286dc1fe4ecee65c890a4f2058cc01d2c7c55298cd7a078425e50ae2053579
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 pe_worker.js (mzpo30.cam) (Source: iVerify)"
+    - value: 36b43f98c7f4d2d5a0f14ce8a5bdfd2fc055f8628da4a2d9ece2402385447f1e
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file framework-legacy.js (Source: SlowMist)"
+    - value: 37efaa4237a28a4be411d40de80b2935be5b8c4e6731ee1f858c609142a87445
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_module_18.6.js (Source: iVerify)"
+    - value: 3a2341a13a7c4854bc203be18eebd11f716e043540a91974ef6d6d12253f6c9d
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file input.js (Source: SlowMist)"
+    - value: 3c297829353778857edfeaed3ceeeca1bf8b60534f1979f7d442a0b03c56e541
+      score: 80
+      description: "Coruna SHA256 - Phantom wallet module (app.phantom) (Source: Google Threat Intelligence Group)"
+    - value: 42cc02cecd65f22a3658354c5a5efa6a6ec3d716c7fbbcd12df1d1b077d2591b
+      score: 80
+      description: "Coruna SHA256 - Bitpie wallet module (com.bitpie.wallet) (Source: Google Threat Intelligence Group)"
+    - value: 46a3234bf6589e73e1a6d52ce5979e3149ccaa2af7202228fd907b807cc4debc
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 c2_agent.js (mzpo30.cam) (Source: iVerify)"
+    - value: 47c2d77f0b15b9f2b237ba534e6dd4392f57d3c75a16fea2dc1b7fa25d312794
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 keychain_copier.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: 489e0e59c1a1fbe92aa692a700b32eb84b47c8f9c757fe61325c028a3a6caeef
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_worker_18.4.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: 48aacf46ad8b7f619d7f4346c330abfbda14a34ed3eb98c215a5ef5fb36e2171
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 MigFilterBypassThread.js (Source: iVerify)"
+    - value: 499f6b1e012d9bc947eea8e23635dfe6464cd7c9d99eb11d5874bd7b613297b1
+      score: 80
+      description: "Coruna SHA256 - Ronin/Sky Mavis module (com.skymavis.Genesis) (Source: Google Threat Intelligence Group)"
+    - value: 49a279c21493e24fcd5c6ce6d898e194a7252da5851e8ff7b7715b97137861fe
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 sbx0_main_18.4.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: 4dc255504a6c3ea8714ccdc95cc04138dc6c92130887274c8582b4a96ebab4a8
+      score: 80
+      description: "Coruna SHA256 - Coruna module (com.uniswap.mobile) (Source: Google Threat Intelligence)"
+    - value: 4df20a173ae6da2291fd66cb28a165958a9a6f5998ef9a19e4e143b120f1a844
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_worker_18.6.js (mzpo30.cam) (Source: iVerify)"
+    - value: 4dfcf5a71e5a8f27f748ac7fd7760dec0099ce338722215b4a5862b60c5b2bfd
+      score: 80
+      description: "Coruna SHA256 - Global Wallet module (com.global.wallet.ios) (Source: Google Threat Intelligence Group)"
+    - value: 52e2208a37c6dda971c9a67333dbcf526531745feb426a91ace9741ad178f510
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file vendor.js (Source: SlowMist)"
+    - value: 54a4166ab33ffe02b41de9c943e783d20129b6cc22f56b7fe7d564fd02bde006
+      score: 80
+      description: "DarkSword SHA256 - core_a5.dylib plasma_core implant (production) (Source: Censys)"
+    - value: 56ac6331f874118692dc8a1250a31c0340a5642adad8a431b33ba1d9c2865afb
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 free_thread.js (Source: iVerify)"
+    - value: 693af544eb4deb194f481a870f1202fefb0c278820bb23bced85cd354d29a63e
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file common-legacy.js (Source: SlowMist)"
+    - value: 69b6cb327a4d5da99399718f6a66f84de69f89425b0a31f2dcee0682f811596f
+      score: 80
+      description: "APT29_DarkSword_Derivative SHA256 - Class B Stage 3 iOS exploit chain (Source: Sekoia)"
+    - value: 69e357f06ee87ea934b328c4e701d1d48dcfcef51352bb61c64ef89424c029d8
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file common.js (Source: SlowMist)"
+    - value: 6eafd742f58db21fbaf5fd7636e6653446df04b4a5c9bca9104e5dfad34f547c
+      score: 80
+      description: "Coruna SHA256 - BitKeep wallet module (com.bitkeep.os) (Source: Google Threat Intelligence Group)"
+    - value: 6eda3586102cf35ca53189accd2f56fec63a8adf74ccf93b59aed1e7651a690f
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file sync.js (Source: SlowMist)"
+    - value: 71fe83847cdaf8c4d6c1aca90078dc4021cb96010062279d26338f06b4a7ba06
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_worker_18.4.js (mzpo30.cam) (Source: iVerify)"
+    - value: 721b46b43b7084b98e51ab00606f08a6ccd30b23bef5e542088f0b5706a8f780
+      score: 80
+      description: "Coruna SHA256 - Krystal wallet module (com.kyrd.krystal.ios) (Source: Google Threat Intelligence Group)"
+    - value: 73fb3a5a03e630f36deb2c31b77f2e48289c90d2e840746715ebf2c5847584d4
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_module_18.7.js (mzpo30.cam) (Source: iVerify)"
+    - value: 77238255f541274ed0c8c1e5e0ffe034532a210a3aaba94d63a05a3499362022
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_worker_18.7.js (mzpo30.cam) (Source: iVerify)"
+    - value: 78406a0c68043df99cea87f280e8307675c285ca9d88f5a56aa9901c6f503d11
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file auth.js (Source: SlowMist)"
+    - value: 78973b4d04cb6fee3c399937476347eca0aa9b99fa13596fe9dfaff829aba03b
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file framework.js (Source: SlowMist)"
+    - value: 7bec1ec0337c12aa49b83e40f3b7659d9d332ecbd1fd209fd1b948086ec2768c
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_worker_18.6.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: 7ff5bb16cd5f8c92bc4fec72bba162662f202af075418db5000a1b4f81489fc2
+      score: 80
+      description: "DarkSword SHA256 - future-destroy.htm SpringBoard injection coordinator (Source: Censys)"
+    - value: 85d8f504cadb55851a393a13a026f1833ed6db32cb07882415e029e709ae0750
+      score: 80
+      description: "Predator SHA256 - Google GTIG Predator/PREYHUNTER sample (Source: Google Threat Intelligence)"
+    - value: 892dd644ea9a10fd4d89c54d6cfe1028487c3fc23d3f29723af9004b6edf8c70
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file lk.js (Source: SlowMist)"
+    - value: 8973e80ab494c02463d4123f76fc5e2dca2ea2c097317d246323d75c1f2eb791
+      score: 80
+      description: "DarkSword SHA256 - stage2.dylib plasma controller (Source: Censys)"
+    - value: 89912ab03eb2d02746e52df7b17035082d973234f249098caec11684e665c337
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file lk.js (Source: SlowMist)"
+    - value: 91d44c1f62fd863556aac0190cbef3b46abc4cbe880f80c580a1d258f0484c30
+      score: 80
+      description: "Coruna SHA256 - imToken wallet module (im.token.app) (Source: Google Threat Intelligence Group)"
+    - value: 92c7d246d2c163c076f783dcc19f87f5b9b9ac301b106b87a7aaea9346ce0052
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_module.js (mzpo30.cam) (Source: iVerify)"
+    - value: 953cfa9bf94304ad453eab706cd7cc92cde68eb6ea3c85652aa9040609e75f54
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file sandbox.html (Source: SlowMist)"
+    - value: 9b6ca11dcd1c6c57ef056a1f6452a38fb1c2ead452057755db37a921ac63b1be
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_worker_18.5.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: a50c4da5c92636b2b1f170cdce3bd967a213886a8df5656cf3519214fcecfac5
+      score: 80
+      description: "DarkSword SHA256 - core_v6.dylib plasma_core implant (lab) (Source: Censys)"
+    - value: a5ca944459c08038bfabf7ddbfc6ec2505ef0dc22b987569ed295f7378f30d59
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 sbx0_main_18.4.js (mzpo30.cam) (Source: iVerify)"
+    - value: a5ebcbd5c744865535dd75d8742c99bc06b548dc2606ac6f116843b54451f73b
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file runtime.js (Source: SlowMist)"
+    - value: a7d2493df00565c21587b0cad2a9fe7ca1e5590acf796da6e499be0ffde44cc3
+      score: 80
+      description: "APT29_DarkSword_Derivative SHA256 - Class A Stage 1 iOS exploit chain (Source: Sekoia)"
+    - value: ab356a2bbdbb7f8e9327e10a2cf6d35ca0c4dbba06d982f559b00d13d31f3017
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file app.js (Source: SlowMist)"
+    - value: afdb430bafc3c441ada98fe4a165fd1ad3a38ff5789517c5dd3f83a143706d53
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file runtime-legacy.js (Source: SlowMist)"
+    - value: be28b40df919d3fa87ed49e51135a719bd0616c9ac346ea5f20095cb78031ed9
+      score: 80
+      description: "Coruna SHA256 - MyTonWallet module (org.mytonwallet.app) (Source: Google Threat Intelligence Group)"
+    - value: bee3e014e3df87ddce0250b0985b87f6868a427a7b650a74b7ffedb9d57f3088
+      score: 80
+      description: "APT29_DarkSword_Derivative SHA256 - Class A Stage 2 iOS exploit chain (Source: Sekoia)"
+    - value: c170fda024183645c0aa681149304e50506509c3498bb6b9a5f5ced6aa73e5fa
+      score: 80
+      description: "APT29_DarkSword_Derivative SHA256 - Class B Stage 1 iOS exploit chain (Source: Sekoia)"
+    - value: c1b05dd8e7d060d2a40a859211528e90e62d0dc378f8af831933fe59122490dd
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 sbx1_main.js (mzpo30.cam) (Source: iVerify)"
+    - value: c391bce7b09a0ea263e4b2c1d1bde0327c180723fa3299b006485429564c61ee
+      score: 80
+      description: "DarkSword SHA256 - bootstrap.dylib stage-0 beacon (Source: Censys)"
+    - value: c6587d10462c81c66c0798378710f492c7725a91d86c8e541cf66211bff4abff
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 c2_agent.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: c9f8bf92af34239f68e6be9bed945d6e9b4e2d5fc6883a501bc85e3c88a761b7
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_loader.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: d371e3bed18ee355438b166bbf3bdaf2e7c6a3af8931181b9649020553b07e7a
+      score: 80
+      description: "Coruna SHA256 - Tonhub module (com.tonhub.app) (Source: Google Threat Intelligence Group)"
+    - value: d517c3868c5e7808202f53fa78d827a308d94500ae9051db0a62e11f7852e802
+      score: 80
+      description: "Coruna SHA256 - Solflare wallet module (com.solflare.mobile) (Source: Google Threat Intelligence Group)"
+    - value: d554f534fad7822cbde9ca7d9f6efe8a7e0f5786ccee60f8db6dad340a2a6f80
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 loader.js (mzpo30.cam) (Source: iVerify)"
+    - value: e3314bcd085bd547d9b977351ab72a8b83093c47a73eb5502db4b98e0db42cac
+      score: 80
+      description: "Predator SHA256 - Google GTIG Predator/PREYHUNTER sample (Source: Google Threat Intelligence)"
+    - value: e709457ac7fc6a00a1d7940ff8c1ec5370678b4f47fd7942180517bd2f1421cb
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_module_18.7.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: e7d3a07164d26f31e6305639119942d5ae26a7056c2fc86441ecd6b5ae9e17b6
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 pe_worker.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: eb6da327d5e456a594a066fda2140234ffad305fb204556477718dfce31afe81
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_loader.js (mzpo30.cam) (Source: iVerify)"
+    - value: f0409f0d1c134be43dcd697b4715cca64efa66e482d252744163f552050cd236
+      score: 80
+      description: "Packagist Chain SHA256 - Packagist exploit stage file polyfill.js (Source: SlowMist)"
+    - value: f0f0aa82a03bf4835864a5b7f7ba38e537f3f81e82b3db311ac0d80b4b4b022e
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 keychain_copier.js (mzpo30.cam) (Source: iVerify)"
+    - value: f218068ea943a511b230f2a99991f6d1fbc2ac0aec7c796b261e2a26744929ac
+      score: 80
+      description: "Coruna SHA256 - TronLink module (com.tronlink.hdwallet) (Source: Google Threat Intelligence Group)"
+    - value: f97aa214f10ede8c93acaae0bd975d945fda3fdb8a98af2977ca168467bdf214
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 sbx1_main.js (cdn.gotoiphone.com) (Source: iVerify)"
+    - value: f9b3ea20bdd1a8650d31b6053c87a1d684ff86a64212662f1850f9e67fb5521b
+      score: 80
+      description: "DarkSword_P7 SHA256 - P7 rce_module.js (cdn.gotoiphone.com) (Source: iVerify)"
+  c2s:
+    - value: "101.35.158.183"
+      score: 75
+      description: "DarkSword C2 - Origin behind 66ds.lol (Tencent Shanghai) (Source: Censys)"
+    - value: "103.200.125.188"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "103.226.155.200"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "103.226.155.200:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "103.226.155.201"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "103.39.79.232"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "103.73.160.115"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "109.104.106.107"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - static.flux-telemetry.com IP (Source: Sekoia)"
+    - value: "112.213.108.85"
+      score: 75
+      description: "DarkSword C2 - Live production server (hdios.cn) (Source: Censys)"
+    - value: "120.79.8.107"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - SparkKitty C2 server (Source: Kaspersky)"
+    - value: "139.180.139.209"
+      score: 75
+      description: "FakeWallet C2 - Configuration host (Source: Kaspersky)"
+    - value: "14.128.47.81"
+      score: 75
+      description: "DarkSword C2 - C2 panel same group name different build (Source: Censys)"
+    - value: "141.105.130.237"
+      score: 75
+      description: "DarkSword C2 - DarkSword C2 IP 2025-12-22 to 2026-03-17 (Lookout) (Source: Google Threat Intelligence Group / Lookout)"
+    - value: "149.88.67.47"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "152.53.169.187"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "154.18.187.160"
+      score: 75
+      description: "DarkSword C2 - Backup delivery stack (fc.rsqqq.top) (Source: Censys)"
+    - value: "154.217.250.206"
+      score: 75
+      description: "DarkSword C2 - C2 PANEL v3.0 Ghost/Phantom Group (Source: Censys)"
+    - value: "154.219.127.147"
+      score: 75
+      description: "DarkSword C2 - Staging host in production package (exclude from IOC lists per Censys) (Source: Censys)"
+    - value: "154.219.127.94"
+      score: 75
+      description: "DarkSword C2 - Egress IP (exclude from IOC lists per Censys) (Source: Censys)"
+    - value: "156.239.230.120"
+      score: 75
+      description: "DarkSword C2 - Open-directory cluster host:8080/80 full C2 platform (Source: Censys)"
+    - value: "156.245.145.11"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "156.252.63.106"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "156.252.63.107"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "156.252.63.108"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "156.252.63.110"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "16.59.214.49"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "162.4.136.30"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "166.88.95.90"
+      score: 75
+      description: "DarkSword C2 - Open-directory cluster host:9999 Evoxt Japan operational C2 (Source: Censys)"
+    - value: "177.2.184.26"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "178.landexuan.site:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "178.landexuan.site:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "18.118.213.237"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "18.118.213.237:8080"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "18.hhpp666.xyz:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "18.hhpp666.xyz:80"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "182.239.114.223"
+      score: 75
+      description: "DarkSword C2 - Victim IP China Mobile Hong Kong iOS 16.1 beaconing (Source: Censys)"
+    - value: "183.154.173.30"
+      score: 75
+      description: "DarkSword C2 - Victim IP CHINANET Hangzhou iOS 16.3.1 beaconing (Source: Censys)"
+    - value: "188.190.17.232"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - theowo.club IP (Source: Sekoia)"
+    - value: "192.121.46.25"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - america250.holiday IP (Source: Sekoia)"
+    - value: "192.253.229.191"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "194.59.30.222"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "194.59.30.222:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "194.59.30.222:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "195.58.140.105"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - ad.starx-net.com IP (Source: Sekoia)"
+    - value: "199.30.90.154:18090"
+      score: 75
+      description: "DarkSword C2 - URL: Hardcoded lab deploy host fallback C2 (Source: Censys)"
+    - value: "1k.wyincc.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exploit/C2 domain (SlowMist) (Source: SlowMist)"
+    - value: "202.146.222.253"
+      score: 75
+      description: "DarkSword C2 - Old production server (i.131422.com) (Source: Censys)"
+    - value: "202.146.222.253"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "202.8.120.249"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "202.8.120.249:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "203.91.77.253"
+      score: 75
+      description: "DarkSword C2 - Operator work machine (st.onlinefc.top) (Source: Censys)"
+    - value: "218.25.85.177"
+      score: 75
+      description: "DarkSword C2 - northlab.cn China Unicom Shenyang (Source: Censys)"
+    - value: "218.25.85.178"
+      score: 75
+      description: "DarkSword C2 - northlab.cn China Unicom Shenyang (Source: Censys)"
+    - value: "23.148.212.237"
+      score: 75
+      description: "DarkSword C2 - Open-directory cluster host:8888 operator analysis workspace (Source: Censys)"
+    - value: "23.249.28.200"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - SparkKitty C2 server (Source: Kaspersky)"
+    - value: "23.249.28.88"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - SparkKitty C2 server port 7777 (Source: Kaspersky)"
+    - value: "26a.online"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "2s3b3rknfqtwwpo.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "38.190.250.151"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "38.22.89.117"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "38.55.193.43"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "39.104.56.125"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "3v5w1km5gv.xyz"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "43.134.165.205"
+      score: 75
+      description: "DarkSword C2 - Open-directory cluster host:9999 Tencent Cloud DS-Fusion v1.0 (Source: Censys)"
+    - value: "45.207.210.78"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "46.183.184.91"
+      score: 75
+      description: "Graphite C2 - URL: Graphite C2 server (Source: Citizen Lab)"
+    - value: "47.102.192.23"
+      score: 75
+      description: "DarkSword C2 - Open-directory cluster host:9876 Alibaba Cloud Coruna staging (Source: Censys)"
+    - value: "47.119.171.161"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - SparkKitty C2 server (Source: Kaspersky)"
+    - value: "47.129.224.84"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "47.74.61.39"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "47.80.242.98"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "4kgame.us"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "4u.game"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "51.91.100.96"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "59.46.4.117"
+      score: 75
+      description: "DarkSword C2 - northlab.cn China Telecom Shenyang (Source: Censys)"
+    - value: "59.46.4.119"
+      score: 75
+      description: "DarkSword C2 - northlab.cn China Telecom Shenyang (Source: Censys)"
+    - value: "62.72.21.10"
+      score: 75
+      description: "DarkSword C2 - GHOSTKNIFE C2 server (UNC6748 Nov 2025) (Source: Google Threat Intelligence)"
+    - value: "64.81.30.49"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "65sse.668ddf.cc"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "66.154.103.112"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "66.154.103.112:8080"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "6688cf.jhxrpbgq.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "66ds.lol"
+      score: 75
+      description: "DarkSword C2 - Wild-build wallet module C2 Cloudflare-fronted (Source: Censys)"
+    - value: "6zvjeulzaw5c0mv.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "72.60.98.48"
+      score: 75
+      description: "DarkSword C2 - DarkSword-related IP (iVerify STIX2) (Source: iVerify)"
+    - value: "7aac.gov.ua"
+      score: 75
+      description: "DarkSword C2 - Ukrainian watering hole (iVerify/Lookout) (Source: iVerify)"
+    - value: "7ff.online"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "7fun.icu"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "7p.game"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "7uspin.us"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "8.209.248.215"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "8fn4957c5g986jp.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "91.208.122.42"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "93.152.221.37"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "95.133.231.28"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - edge-ord.clouds-stacks.com IP (Source: Sekoia)"
+    - value: "96.ip-51-91-100.eu"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword iframe host or self-hosted C2 IP (Source: iVerify)"
+    - value: "98a.online"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "9kym.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "a.plerdy.com"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - Compromised Plerdy tracker source (Source: Sekoia)"
+    - value: "a01.ai-poolion.cc:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "a01.ai-poolion.cc:80"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "a6cthflpd8xih09.fit:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "a6cthflpd8xih09.fit:80"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "abfdns.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "abfedgecanme.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "ad-track.live"
+      score: 75
+      description: "DarkSword C2 - Malicious Instagram ad delivery domain (DeadTag campaign) (Source: iVerify / Report URI)"
+    - value: "ad.starx-net.com"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - Delivery/exfiltration host (Source: Sekoia)"
+    - value: "ad.starx-net.com:8881"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - URL: Exfiltration endpoint (Source: Sekoia)"
+    - value: "addatamarket.net"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "adv45.volasim.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech Controlium instance (Source: Citizen Lab)"
+    - value: "adv50.volasim.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech Controlium instance (Source: Citizen Lab)"
+    - value: "agdx53.cc"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 C2 server (Source: iVerify)"
+    - value: "agdx53.cc"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 C2 server (Source: iVerify)"
+    - value: "ai-poolion.cc"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "ai-poolion.cc:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "ai-poolion.cc:80"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "ai-scorepredict.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna delivery (Source: Google Threat Intelligence)"
+    - value: "aidm8it5hf1jmtj.xyz"
+      score: 75
+      description: "Coruna C2 - Config and implant server (Source: iVerify)"
+    - value: "ajskbnrs.xn--jor0b302fdhgwnccw8g.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "akedo.gg"
+      score: 75
+      description: "Candiru_AdFection C2 - Gaming platform / advertiser linked to Discover-Tech (Source: Citizen Lab)"
+    - value: "america250.holiday"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - Fake AiTM website (Source: Sekoia)"
+    - value: "ans7tv.net"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "anstv.net"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "anygg.liquorfight.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "api.aliyung.com:18883"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - SparkCat Rust/TCP C2 (Source: Kaspersky)"
+    - value: "api.aliyung.org"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - SparkCat HTTP C2 (Source: Kaspersky)"
+    - value: "api.fxsdk.com"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - SparkKitty C2 domain (Source: Kaspersky)"
+    - value: "api.npoint.io"
+      score: 75
+      description: "FakeWallet C2 - URL: Configuration JSON (Source: Kaspersky)"
+    - value: "appstoreios.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Phishing download (Source: Kaspersky)"
+    - value: "archer.westeurope.cloudapp.azure.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Bindecy-linked Azure host (Source: Citizen Lab)"
+    - value: "b27.icu"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "b38w09ecdejfqsf.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "backuprabbit.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "bauking.ch:80"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "bd-mainserver.herokuapp.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Bindecy-linked Heroku app (Source: Citizen Lab)"
+    - value: "beachvibesnow.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Bindecy-linked domain (cupid-ca cert) (Source: Citizen Lab)"
+    - value: "bestcryptocurrency.top"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "binancealliancesintro.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "bindecy.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Israeli spyware firm linked to Controlium users (Source: Citizen Lab)"
+    - value: "bitbrowserpro.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "botiq.site"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "btrank.top"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "buqiu.site"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "businessvideonews.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "c2.ios.catcoinglobal.top:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "c2.ios.catcoinglobal.top:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "catcoinglobal.top"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "ccwu.cc"
+      score: 75
+      description: "DarkSword C2 - C2 panel forward DNS hostname (Source: Censys)"
+    - value: "cdn.cdncounter.net"
+      score: 75
+      description: "DarkSword C2 - DarkSword delivery subdomain (Source: Google Threat Intelligence Group / Lookout)"
+    - value: "cdn.data-2919.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "cdn.data-2920.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "cdn.gotoiphone.com"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 exploit URL (Source: iVerify)"
+    - value: "cdn.uacounter.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6353 Coruna delivery (Source: Google Threat Intelligence)"
+    - value: "cdn1.ai"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "cdnbing.vip"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "cdncounter.net"
+      score: 75
+      description: "DarkSword C2 - DarkSword delivery infrastructure (Source: Google Threat Intelligence Group / Lookout)"
+    - value: "cdngoogle.vip"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "cf.r5dz2dz88wuideu.xyz"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "citymaster.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Volasim game site linked to Discover-Tech (Source: Citizen Lab)"
+    - value: "cloudsponcer.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "controlium.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech Controlium platform (Source: Citizen Lab)"
+    - value: "cookiesurfer.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Tracking pixel site (Source: Citizen Lab)"
+    - value: "count.cdncounter.net"
+      score: 75
+      description: "DarkSword C2 - DarkSword delivery subdomain (Source: Google Threat Intelligence Group / Lookout)"
+    - value: "crowdsec.site"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "crypto-stroe.cc"
+      score: 75
+      description: "FakeWallet C2 - URL: Phishing store (Source: Kaspersky)"
+    - value: "cryptocurrencyworld.top"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "cy8.top"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "d1fcoizt7mje85.cloudfront.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru/Discover-Tech Infinite FIFO CDN (Source: Citizen Lab)"
+    - value: "darksword.bitbrowserpro.com:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "darksword.botiq.site:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "darksword.botiq.site:80"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "datamarketplace.net"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "dbgopaxl.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "dd9l7e6ghme8pbk.xyz"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "ddus17.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna delivery (Source: Google Threat Intelligence)"
+    - value: "discover-tech.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech corporate site / tracking (Source: Citizen Lab)"
+    - value: "discovertech.us.auth0.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Controlium Auth0 tenant (Source: Citizen Lab)"
+    - value: "dsreceiver.onaylarim.com:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "dsreceiver.onaylarim.com:80"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "dsw.webtest.eu.cc:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "dtech.adtimizer.co"
+      score: 75
+      description: "Candiru_AdFection C2 - Impression/click tracking (Beeswax) (Source: Citizen Lab)"
+    - value: "e5.malaymoil.com"
+      score: 75
+      description: "DarkSword C2 - DarkSword delivery (PARS Defense Malaysia) (Source: Google Threat Intelligence)"
+    - value: "edge-ord.clouds-stacks.com"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - Delivery/exfiltration host (Source: Sekoia)"
+    - value: "eg2bjo5x5r8yjb5.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "enjoymultiplecats.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Bindecy-linked domain (Source: Citizen Lab)"
+    - value: "escofiringbijou.com"
+      score: 75
+      description: "DarkSword C2 - Atlantic Council spear-phishing DarkSword C2 (Source: MalforsHQ/Google GTIG)"
+    - value: "eseu.top"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "event.polarnode.vip"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exploit/C2 domain (SlowMist) (Source: SlowMist)"
+    - value: "events-ui.discover-tech.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Mini Platform C UI (Source: Citizen Lab)"
+    - value: "events-ui.myweb3id.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Mini Platform C UI (Source: Citizen Lab)"
+    - value: "events.myweb3id.io"
+      score: 75
+      description: "Candiru_AdFection C2 - ID syncing with Yandex (Source: Citizen Lab)"
+    - value: "events.platc-tester.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Mini Platform C NOAS (Source: Citizen Lab)"
+    - value: "fc.rsqqq.top"
+      score: 75
+      description: "DarkSword C2 - Backup delivery stack hostname (Source: Censys)"
+    - value: "fearevolve.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru C&C server matching Fingerprint C1 (Source: Citizen Lab)"
+    - value: "ffethy.work"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "fxrhcnfwxes90q.xyz"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "g.northlab.cn"
+      score: 75
+      description: "DarkSword C2 - Leaked via origin :9443 cert SAN (Source: Censys)"
+    - value: "galedns.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "gdvynopz3pa0tik.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "global-orions.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "globaldatapoints.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Intelos-linked ADINT platform (Source: Citizen Lab)"
+    - value: "goanalytics.xyz"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "goodcryptocurrency.top"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "gqjs3ra34lyuvzb.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "growthtransport.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "h1997.tiktokapp.club"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - TikTok mod store link (Source: Kaspersky)"
+    - value: "h4k.icu"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "hbwney.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "hdios.cn"
+      score: 75
+      description: "DarkSword C2 - Live production server hostname (Source: Censys)"
+    - value: "hfteigt3kt0sf3z.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "hhpp666.xyz"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "hi-metaverse.online"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "https://api.dc1637.xyz"
+      score: 75
+      description: "FakeWallet C2 - C2 API (Source: Kaspersky)"
+    - value: "https://helllo2025.com/api/open/postbytokenpocket"
+      score: 75
+      description: "FakeWallet C2 - Seed exfiltration (Source: Kaspersky)"
+    - value: "https://iosfc.com/ledger/ios/rsakeycatch.php"
+      score: 75
+      description: "FakeWallet C2 - Ledger seed exfiltration (Source: Kaspersky)"
+    - value: "https://kkkhhhnnn.com/api/open/postbytokenpocket"
+      score: 75
+      description: "FakeWallet C2 - Seed exfiltration (Source: Kaspersky)"
+    - value: "https://nmu8n.com/tpocket/ios/rsakeyword.php"
+      score: 75
+      description: "FakeWallet C2 - TokenPocket seed exfiltration (Source: Kaspersky)"
+    - value: "https://sxsfcc.com/api/open/postbytokenpocket"
+      score: 75
+      description: "FakeWallet C2 - Seed exfiltration (Source: Kaspersky)"
+    - value: "https://zmx6f.com/btp/ios/receirsakeyword.php"
+      score: 75
+      description: "FakeWallet C2 - Bitpie seed exfiltration (Source: Kaspersky)"
+    - value: "hui4tbh9uv9x4yi.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "i.131422.com"
+      score: 75
+      description: "DarkSword C2 - Old production hostname (Source: Censys)"
+    - value: "i.bicoin.com.cn"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - Server for 币coin app responses (Source: Kaspersky)"
+    - value: "i.binaner.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "i1.9kym.com:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "i1.9kym.com:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "icecreamtester.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Bindecy-linked domain (Source: Citizen Lab)"
+    - value: "imp.powerium.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Impression tracking (Source: Citizen Lab)"
+    - value: "infoanalytics.live"
+      score: 75
+      description: "Candiru_AdFection C2 - Bindecy-linked domain (Source: Citizen Lab)"
+    - value: "insightenterprisells.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru C&C server matching Fingerprint C1 (Source: Citizen Lab)"
+    - value: "intelos.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Mercenary ADINT vendor linked to Discover-Tech (Source: Citizen Lab)"
+    - value: "ios.eseu.top:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "ios.eseu.top:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "ios.teegrom.top"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "ios99.crowdsec.site:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "ios99.crowdsec.site:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "iosadmin.wanyebao.cn:443"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "iosqbranch-bzbtegd6efhqbxc4.swedencentral-01.azurewebsites.net:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "iosqbranch-bzbtegd6efhqbxc4.swedencentral-01.azurewebsites.net:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "iphonex.mjdqw.cn"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "iplcz.cn"
+      score: 75
+      description: "DarkSword C2 - IPLCZ Test Lab parent domain (Source: Censys)"
+    - value: "jobmarcher.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru C&C server matching Fingerprint C1 (Source: Citizen Lab)"
+    - value: "js.cookie-sync.xyz"
+      score: 75
+      description: "Candiru_AdFection C2 - Older tracking pixel JS (Source: Citizen Lab)"
+    - value: "js.gotoiphone.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 C2 server (path /ios18) (Source: iVerify)"
+    - value: "js.gotoiphone.com"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 C2 path (Source: iVerify)"
+    - value: "js.tracookiepixel.xyz"
+      score: 75
+      description: "Candiru_AdFection C2 - Tracking pixel JS (Source: Citizen Lab)"
+    - value: "k96.icu"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "kanav.blog"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "keyadapter.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru validator server matching Fingerprint V1 (Source: Citizen Lab)"
+    - value: "kz-news.cc"
+      score: 75
+      description: "Predator C2 - Predator infection domain Kazakhstan/EAGLE cluster (Source: Amnesty International)"
+    - value: "kz-ordas.com"
+      score: 75
+      description: "Predator C2 - Predator infection domain Kazakhstan/EAGLE cluster (Source: Amnesty International)"
+    - value: "land.777bingos.xyz"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "land.77bingos.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "land.bingo777.now"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "landexuan.site"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "lddx3z2d72aa8i6.xyz"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "lk.wyincc.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exploit/C2 domain (SlowMist) (Source: SlowMist)"
+    - value: "lk4x6x2ejxaw2br.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "logger.controlium.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech event logger (Source: Citizen Lab)"
+    - value: "logger.powerium.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech event logger (Source: Citizen Lab)"
+    - value: "lsnngjyu9x6vcg0.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "luttyd.work"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "m.pc6.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna delivery (Source: Google Threat Intelligence)"
+    - value: "manager.g.northlab.cn"
+      score: 75
+      description: "DarkSword C2 - Leaked via origin :9443 cert SAN (Source: Censys)"
+    - value: "mgi1y.siyangoil.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "mkkku.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "moabc.vip"
+      score: 75
+      description: "SparkCat/SparkKitty C2 - Configuration host for TikTok mods (Source: Kaspersky)"
+    - value: "mobilegamerstats.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "mollquest.top"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "mti4ywy4.lahuafa.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "mtjln.siyangoil.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "mtrtb.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech DSP / bidding data (Source: Citizen Lab)"
+    - value: "mxbc-v2.tjbjdod.cn"
+      score: 75
+      description: "Coruna C2 - Exploit server (iVerify CryptoWaters) (Source: iVerify)"
+    - value: "mydsp.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech DSP (Source: Citizen Lab)"
+    - value: "myinfoback.adtimizer.co"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech infrastructure via Adtimizer (Source: Citizen Lab)"
+    - value: "myipinfo.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Controlium OpSec decoder / MyIPInfo site (Source: Citizen Lab)"
+    - value: "mziyytm5ytk.ahroar.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "mzpo30.cam"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 exploit URL (Source: iVerify)"
+    - value: "n49.top"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "ngy2yjq0otlj.ahroar.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "noas.adtimizer.co"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech NOAS via Adtimizer subdomain (Source: Citizen Lab)"
+    - value: "noas.mtrtb.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech legacy NOAS server (Source: Citizen Lab)"
+    - value: "noas.powerium.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech legacy NOAS server (Source: Citizen Lab)"
+    - value: "noor-alaziz.online"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "northlab.cn"
+      score: 75
+      description: "DarkSword C2 - Operator lab domain Shenyang mail/lab cluster (Source: Censys)"
+    - value: "novosti.dn.ua"
+      score: 75
+      description: "DarkSword C2 - Ukrainian watering hole (iVerify/Lookout) (Source: iVerify)"
+    - value: "nqsaaskw.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "ntm0mdkzymy3n.oukwww.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "nuih22.cc"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "nziwytu5n.lahuafa.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "o08h5rhu2lu1x0q.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "odm0.siyangoil.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "ol67el6pxg03ad7.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "onaylarim.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "ose.668ddf.cc"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "osec2.668ddf.cc"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "outdooutcome.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru profiling domain registered Mar 2025 (Source: Citizen Lab)"
+    - value: "pen0axt0u476duw.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "pepeairdrop01.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "pickarest.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Bindecy-linked domain (Source: Citizen Lab)"
+    - value: "plasticbells.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru C&C server matching Fingerprint C1 (Source: Citizen Lab)"
+    - value: "polarnode.vip"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exploit/C2 domain (SlowMist) (Source: SlowMist)"
+    - value: "powerium.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech Controlium platform (Source: Citizen Lab)"
+    - value: "ppv2.mtrtb.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech NOAS / Infinite FIFO v2 production (Source: Citizen Lab)"
+    - value: "pqv2.mtrtb.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech NOAS / Infinite FIFO v2 QA (Source: Citizen Lab)"
+    - value: "qa-noas.powerium.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech QA NOAS server (Source: Citizen Lab)"
+    - value: "relevantech.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech predecessor domain (Source: Citizen Lab)"
+    - value: "remindmewhere.app"
+      score: 75
+      description: "Candiru_AdFection C2 - Volasim reminder app linked to Discover-Tech (Source: Citizen Lab)"
+    - value: "res54allb.xn--xkrsa0078bd6d.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "rlau616jc7a7f7i.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "roy2tlop2u.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "sadjd.mijieqi.cn"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "sahibndn.io"
+      score: 75
+      description: "DarkSword C2 - DarkSword-related domain (iVerify STIX2) (Source: iVerify)"
+    - value: "seven7.to"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "seven7.vip"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "sf2bisx5nhdkygn3l.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "shapelie.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "share.4u.game"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "share.7p.game"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "sharethere.net"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru validator server matching Fingerprint V1 (Source: Citizen Lab)"
+    - value: "siekeltd.com"
+      score: 75
+      description: "DarkSword C2 - Atlantic Council spear-phishing DarkSword payload domain (Source: MalforsHQ/Google GTIG)"
+    - value: "sincereaccertain.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru profiling server distributed via Discover-Tech ads (Source: Citizen Lab)"
+    - value: "sj9ioz3a7y89cy7.xyz"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "snapshare.chat"
+      score: 75
+      description: "DarkSword C2 - DarkSword delivery (UNC6748 Saudi Arabia) (Source: Google Threat Intelligence)"
+    - value: "snoweeanalytics.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "so5083.tubeluck.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "solutionsresults.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "solutionsresults.com:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "solutionsresults.com:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "spin7.icu"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "sqwas.shapelie.com"
+      score: 75
+      description: "DarkSword C2 - GHOSTBLADE exfiltration server (UNC6353) (Source: Google Threat Intelligence)"
+    - value: "sqwas.shapelie.com:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "sqwas.shapelie.com:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "st.onlinefc.top"
+      score: 75
+      description: "DarkSword C2 - Operator work machine hostname (Source: Censys)"
+    - value: "static.cdncounter.net"
+      score: 75
+      description: "DarkSword C2 - DarkSword delivery via Ukrainian watering holes (UNC6353) (Source: Google Threat Intelligence)"
+    - value: "static.flux-telemetry.com"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - Delivery/exfiltration host (Source: Sekoia)"
+    - value: "sufiok.work"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "suggestutterly.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Candiru profiling domain registered Mar 2025 (Source: Citizen Lab)"
+    - value: "supachok.thelazycat.dpdns.org"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "t7c.icu"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "tagclick-cdn.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "tekma-dmp.ai"
+      score: 75
+      description: "Candiru_AdFection C2 - Data marketing platform linked to Discover-Tech/Intelos (Source: Citizen Lab)"
+    - value: "tekma.adtimizer.co"
+      score: 75
+      description: "Candiru_AdFection C2 - Discover-Tech infrastructure via Adtimizer (Source: Citizen Lab)"
+    - value: "tekma.io"
+      score: 75
+      description: "Candiru_AdFection C2 - Older Tekma site linked to same entity (Source: Citizen Lab)"
+    - value: "theowo.club"
+      score: 75
+      description: "APT29_DarkSword_Derivative C2 - Fake AiTM website (Source: Sekoia)"
+    - value: "topographyupdates.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "tracker.mtrtb.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Click/impression tracking (Source: Citizen Lab)"
+    - value: "tracookiepixel.xyz"
+      score: 75
+      description: "Candiru_AdFection C2 - ID syncing with Beeswax (Source: Citizen Lab)"
+    - value: "trxkk.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "uawwydy3qas6ykv.xyz"
+      score: 75
+      description: "Coruna C2 - C2 communication (Source: iVerify)"
+    - value: "union.macoms.la"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "unlimitedteacup.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "v2gmupm7o4zihc3.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "vdvd2026.com"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "virtuallaughing.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "vocc.top"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "volasim.com"
+      score: 75
+      description: "Candiru_AdFection C2 - Digital marketing agency linked to Controlium (Source: Citizen Lab)"
+    - value: "vvri8ocl4t3k8n6.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "w2a315.tubeluck.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "wanyebao.cn"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "web-trackers.com"
+      score: 75
+      description: "Operation Triangulation C2 - C&C domain (Source: Kaspersky)"
+    - value: "webtest.eu.cc"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "wumian.cc.cd"
+      score: 75
+      description: "DarkSword C2 - C2 panel forward DNS hostname (Source: Censys)"
+    - value: "www.0liwevrhxdc3s2xk00.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.39rwcybep-20pwozhvdrzzy.net"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.5wg3w278e3oamlohmcinrkh.live"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.appstoreconn.com"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "www.cloudfareintcdn.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "www.dlosdekr1u18msmov51.net"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.ex0x40vmi8qyccxq.net"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.gxzhrc.cn"
+      score: 75
+      description: "FakeWallet C2 - URL: Phishing download (Source: Kaspersky)"
+    - value: "www.ioa7xqmhiz26fv5e.info"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.isbo31w1o7xk3fztvmgpbv.app"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.jhflt6l0dwminsl494836rb.org"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.kp2-3ur6pe4r8i2hj5.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.ljot1cem6jhzfu53yb9aj3h.app"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.ncalb1rzb2rq5-3zdx1.app"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.ov86ayb0fe4ep2b92-645o.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.qdh71-y6j7vxgw046v4cvgga.live"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.sx3cjniwo1bmtqs0vlj-va2f.app"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.sx8vuz4smtdol7pg.com"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.t9ffxu6zhf915fadjv1.app"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.vutjsf0sd9sdqt2rkzvgzv9a.org"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.w4iunvbdvjof39q-3.net"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.xtpj2bzxip6iq7n3bnz.info"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "www.zfu4n4kxgmx32hsqg.cc"
+      score: 75
+      description: "Packagist Chain C2 - Packagist exfiltration C2 (Source: Socket Security)"
+    - value: "xfal48cf0ies7ew.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "xittgveqaufogve.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "xjslbdt9jdijn15.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "xmkeji.vip"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "xmmfrkq9oat1daq.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "xz.apps-store.im"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "y4w.icu"
+      score: 75
+      description: "Coruna C2 - URL: UNC6691 Coruna exploit delivery URL (Source: Google Threat Intelligence Group)"
+    - value: "yjzhengruol.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Phishing link (Source: Kaspersky)"
+    - value: "yunray.ai"
+      score: 75
+      description: "Packagist Chain C2 - Packagist delivery/exploit infrastructure (Source: Socket Security)"
+    - value: "yvgy29glwf72qnl.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "yxpf8899.vip"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "zcjdlb5ubkhy41u.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "zdrhnmjjndu.ulbcl.com"
+      score: 75
+      description: "FakeWallet C2 - URL: Sideload distribution (Source: Kaspersky)"
+    - value: "ztvnhmhm4zj95w3.xyz"
+      score: 75
+      description: "Coruna C2 - PLASMAGRID DGA-style C2 domain (Source: Google Threat Intelligence Group)"
+    - value: "zuchee.cn"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+    - value: "zuchee.cn:8881"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "zuchee.cn:8882"
+      score: 75
+      description: "DarkSword_P7 C2 - URL: P7 DarkSword C2 URL from iVerify infrastructure list (Source: iVerify)"
+    - value: "zyydif.work"
+      score: 75
+      description: "DarkSword_P7 C2 - P7 DarkSword destination/C2 or CDN domain (Source: iVerify)"
+  files:
+    - value: "/--early-boot"
+      type: plain
+      score: 70
+      description: "Pegasus file/process indicator - Lookout jailbreak detection artifact (Source: Lookout)"
+    - value: "/Library/LaunchDaemons/com.apple.ds.agent.plist"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Persistence LaunchDaemon label com.apple.ds.agent (Source: Censys)"
+    - value: "/private/var/Keychains/keychain_dump.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.WebKit.Networking"
+      type: regex
+      score: 70
+      description: "Pegasus file/process indicator - iVerify Pegasus 2022 shutdown.log IOC (Source: iVerify)"
+    - value: "/private/var/db/keychain_dump.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/keybags/keychain_dump.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/log/keychain_dump.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/logs/keybagd/fs.db"
+      type: regex
+      score: 70
+      description: "Predator file/process indicator - Predator on-device forensic indicator (Source: Amnesty International)"
+    - value: "/private/var/mobile/Library/Caches/.com.apple.mobileassetd.cache"
+      type: regex
+      score: 70
+      description: "Coruna file/process indicator - Persistent Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/mobile/Library/Caches/.com.apple.notes.cache.plist"
+      type: regex
+      score: 70
+      description: "Coruna file/process indicator - Persistent Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/mobile/Library/Preferences/com.apple.photolibraryd.plist"
+      type: regex
+      score: 70
+      description: "Coruna file/process indicator - Persistent Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/mobile/Library/Preferences/com.apple.photolibraryd.retry.plist"
+      type: regex
+      score: 70
+      description: "Coruna file/process indicator - Persistent Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/root/keychain_dump.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/run/keychain_dump.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/Backup.keybag"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/System.keybag"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/UserEventAgent"
+      type: plain
+      score: 70
+      description: "Predator file/process indicator - Predator on-device forensic indicator (Source: Amnesty International)"
+    - value: "/private/var/tmp/_hq_notestore"
+      type: plain
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Copy of victim Apple Notes database (Source: iVerify)"
+    - value: "/private/var/tmp/_hq_notestore-shm"
+      type: plain
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Copy of Apple Notes SHM (Source: iVerify)"
+    - value: "/private/var/tmp/_hq_notestore-wal"
+      type: plain
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Copy of Apple Notes WAL (Source: iVerify)"
+    - value: "/private/var/tmp/backup_keys_cache.sqlite"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/c2_wallet_debug.log"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Keychain-decryption pipeline trace (Source: iVerify)"
+    - value: "/private/var/tmp/com.apple.WebKit.Networking"
+      type: regex
+      score: 70
+      description: "Predator file/process indicator - Predator on-device forensic indicator (Source: Amnesty International)"
+    - value: "/private/var/tmp/cr"
+      type: plain
+      score: 70
+      description: "Pegasus file/process indicator - Lookout jailbreak detection artifact (Source: Lookout)"
+    - value: "/private/var/tmp/crw"
+      type: plain
+      score: 70
+      description: "Pegasus file/process indicator - Lookout jailbreak detection artifact (Source: Lookout)"
+    - value: "/private/var/tmp/device.kb"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/icloud_dump"
+      type: plain
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/keychain-2.db"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/keychain_c2_dump.done"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - 4-byte marker file (Source: iVerify)"
+    - value: "/private/var/tmp/keychain_c2_dump.json"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Final keychain dump (Source: iVerify)"
+    - value: "/private/var/tmp/keychain_c2_dump.json.tmp"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - In-progress keychain dump (Source: iVerify)"
+    - value: "/private/var/tmp/keychain_dump.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/notes.sqlite"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Copy of Apple Notes SQLite database (Source: iVerify)"
+    - value: "/private/var/tmp/notes.sqlite-shm"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Copy of Apple Notes SHM (Source: iVerify)"
+    - value: "/private/var/tmp/notes.sqlite-wal"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Copy of Apple Notes WAL (Source: iVerify)"
+    - value: "/private/var/tmp/p7_debug.log"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - Debug log of P7 keychain-theft phase (Source: iVerify)"
+    - value: "/private/var/tmp/persona.kb"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/persona_keychains.kb"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/persona_private.kb"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/pl.core.lock"
+      type: regex
+      score: 70
+      description: "Coruna file/process indicator - Temporary Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/tmp/pl.sp.exec.guard.lock"
+      type: regex
+      score: 70
+      description: "Coruna file/process indicator - Temporary Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/tmp/reinstall"
+      type: plain
+      score: 70
+      description: "Coruna file/process indicator - Temporary Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/tmp/relaunch"
+      type: plain
+      score: 70
+      description: "Coruna file/process indicator - Temporary Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/tmp/st_data"
+      type: plain
+      score: 70
+      description: "Pegasus file/process indicator - Lookout jailbreak detection artifact (Source: Lookout)"
+    - value: "/private/var/tmp/stop"
+      type: plain
+      score: 70
+      description: "Coruna file/process indicator - Temporary Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/tmp/upgrade.dylib"
+      type: regex
+      score: 70
+      description: "Coruna file/process indicator - Temporary Coruna implant artifact (Source: iVerify)"
+    - value: "/private/var/tmp/usersession.kb"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/usersession_keychains.kb"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/usersession_private.kb"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/wifi_passwords.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/private/var/tmp/wifi_passwords_securityd.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "/sdcard/aray/cache/devices/.DEVICES"
+      type: regex
+      score: 70
+      description: "SparkCat/SparkKitty file/process indicator - Android marker file (Source: Kaspersky)"
+    - value: "/tmp/nb_cmd"
+      type: plain
+      score: 70
+      description: "DarkSword file/process indicator - IPC command channel (Source: Censys)"
+    - value: "/tmp/nb_result"
+      type: plain
+      score: 70
+      description: "DarkSword file/process indicator - IPC result channel (Source: Censys)"
+    - value: "/var/mobile/Library/Caches/ios_disk_scan.txt"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - disk_scan handler output (Source: iVerify)"
+    - value: "/var/mobile/ios_disk_scan.txt"
+      type: regex
+      score: 70
+      description: "DarkSword_P7 file/process indicator - disk_scan handler output (Source: iVerify)"
+    - value: "/var/root/test.app"
+      type: regex
+      score: 70
+      description: "Pegasus file/process indicator - Lookout jailbreak detection artifact (Source: Lookout)"
+    - value: "/var/wireless/wifi_passwords.txt"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - Keychain/WiFi/iCloud dump artifact (Source: iVerify/Censys)"
+    - value: "ABSCarryLog"
+      type: plain
+      score: 70
+      description: "Pegasus file/process indicator - Pegasus process spoofing ASPCarryLog (Source: Amnesty International)"
+    - value: "BackupAgent"
+      type: plain
+      score: 70
+      description: "Operation Triangulation file/process indicator - Deprecated binary appearing in data usage timeline (Source: Kaspersky)"
+    - value: "IMTransferAgent"
+      type: plain
+      score: 70
+      description: "Operation Triangulation file/process indicator - Downloads iMessage attachment ~242 KB (Source: Kaspersky)"
+    - value: "Library/SMS/Attachments/<hex>/<hex>"
+      type: plain
+      score: 70
+      description: "Operation Triangulation file/process indicator - Empty attachment directories after deletion (Source: Kaspersky)"
+    - value: "com.apple.ImageIO.plist"
+      type: regex
+      score: 70
+      description: "Operation Triangulation file/process indicator - Modified preference file (Source: Kaspersky)"
+    - value: "com.apple.WebKit.WebContent"
+      type: regex
+      score: 70
+      description: "Operation Triangulation file/process indicator - Data usage spike after exploitation (Source: Kaspersky)"
+    - value: "com.apple.imservice.ids.FaceTime.plist"
+      type: regex
+      score: 70
+      description: "Operation Triangulation file/process indicator - Modified preference file (Source: Kaspersky)"
+    - value: "com.apple.locationd.StatusBarIconManager.plist"
+      type: regex
+      score: 70
+      description: "Operation Triangulation file/process indicator - Modified preference file (Source: Kaspersky)"
+    - value: "com.apple.softwareupdateservicesd.plist"
+      type: regex
+      score: 70
+      description: "Operation Triangulation file/process indicator - Modified to block iOS updates (Source: Kaspersky)"
+    - value: "lockdownd"
+      type: plain
+      score: 70
+      description: "Operation Triangulation file/process indicator - Data usage after exploitation (Source: Kaspersky)"
+    - value: "powerd"
+      type: plain
+      score: 70
+      description: "Operation Triangulation file/process indicator - Data usage after exploitation (Source: Kaspersky)"
+    - value: "src/InjectJS.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/MigFilterBypassThread.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/Chain/Chain.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/Chain/Native.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/Chain/OffsetsStruct.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/Driver/Driver.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/Driver/DriverNewThread.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/Driver/Offsets.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/Driver/OffsetsTable.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/JSUtils/FileUtils.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/JSUtils/Logger.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/JSUtils/Utils.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/Exception.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/ExceptionMessageStruct.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/ExceptionReplyStruct.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/MachMsgHeaderStruct.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/PAC.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/PortRightInserter.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/RegistersStruct.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/RemoteCall.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/Sandbox.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/SelfTaskStruct.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/Task.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/TaskRop.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/Thread.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/ThreadState.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/VM.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/VMObject.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/VMShmem.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/VmMapEntry.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"
+    - value: "src/libs/TaskRop/VmPackingParams.js"
+      type: regex
+      score: 70
+      description: "DarkSword file/process indicator - GHOSTBLADE/Webpack library artifact path (Source: Google Threat Intelligence Group)"

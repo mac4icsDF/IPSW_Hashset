@@ -1,0 +1,1067 @@
+Malware,IOC_Type,Indicator,Description,Source
+Pegasus,Process,ABSCarryLog,Pegasus process spoofing ASPCarryLog,Amnesty International
+Pegasus,TTP,iMessage zero-click,No user interaction infection,Citizen Lab
+Pegasus,Patch,iOS 18.4.1,Patched iMessage zero-click used in Serbia case,Citizen Lab
+Pegasus,FilePath,/private/var/db/com.apple.xpc.roleaccountd.staging/com.apple.WebKit.Networking,iVerify Pegasus 2022 shutdown.log IOC,iVerify
+Pegasus,Log_Correlation,containermanagerd vs shutdown.log,For iOS 18 and earlier; discrepancies suggest log wiping,iVerify
+Pegasus,FilePath,/--early-boot,Lookout jailbreak detection artifact,Lookout
+Pegasus,FilePath,/var/root/test.app,Lookout jailbreak detection artifact,Lookout
+Pegasus,FilePath,/private/var/tmp/crw,Lookout jailbreak detection artifact,Lookout
+Pegasus,FilePath,/private/var/tmp/cr,Lookout jailbreak detection artifact,Lookout
+Pegasus,FilePath,/private/var/tmp/st_data,Lookout jailbreak detection artifact,Lookout
+Pegasus,TTP,Covert zero-click,No user interaction required (NSO terminology),Amnesty International
+Pegasus,TTP,Triggered one-click,Requires user to click a link,Amnesty International
+Pegasus,TTP,Close-circle infection,Target colleagues/family of primary target,Amnesty International
+Pegasus,TTP,Per-customer whitened infrastructure,Unique Apple IDs/domains per customer act as fingerprint,Amnesty International
+Pegasus,TTP,PATN anonymizing network,Pegasus Anonymizing Transmission Network hides customer,Amnesty International
+Predator,TTP,8-step pre-deployment validation,Includes log monitoring jailbreak detection proxy detection Developer Mode check,iVerify
+Predator,Defense,iOS Developer Mode enabled,Blocks Predator full payload installation,Citizen Lab/iVerify
+Predator,BundleID,com.elanbenami.EnneaApp,Legitimate App Store app abused for CoreTrust signature,iVerify/Google GTIG
+Predator,TeamID,5PN8QLT2JN,Legitimate Team ID abused in Predator sample,iVerify
+Predator,TeamID,RUQSQXY3U9,Malicious second signature Team ID,iVerify
+Predator,Binary,Watcher,Malicious watcher binary identifier,iVerify
+Predator,FilePath,/private/var/tmp/UserEventAgent,Predator on-device forensic indicator,Amnesty International
+Predator,FilePath,/private/var/tmp/com.apple.WebKit.Networking,Predator on-device forensic indicator,Amnesty International
+Predator,FilePath,/private/var/logs/keybagd/fs.db,Predator on-device forensic indicator,Amnesty International
+Predator,String,RSA_PKEY,Configuration string present in samples,Amnesty International
+Predator,String,FS_KEY,Configuration string present in samples,Amnesty International
+Predator,String,fs.db,Configuration string present in samples,Amnesty International
+Predator,String,pred.so,Android shared library string (cross-platform indicator),Amnesty International
+Predator,TTP,Aladdin,Ad-based zero-click delivery vector,Amnesty International
+Predator,TTP,EAGLE_2,Kazakhstan customer codename from leaked TeamViewer panel,Amnesty International
+Predator,Domain,kz-news.cc,Predator infection domain Kazakhstan/EAGLE cluster,Amnesty International
+Predator,Domain,kz-ordas.com,Predator infection domain Kazakhstan/EAGLE cluster,Amnesty International
+Predator,SHA256,85d8f504cadb55851a393a13a026f1833ed6db32cb07882415e029e709ae0750,Google GTIG Predator/PREYHUNTER sample,Google Threat Intelligence
+Predator,SHA256,e3314bcd085bd547d9b977351ab72a8b83093c47a73eb5502db4b98e0db42cac,Google GTIG Predator/PREYHUNTER sample,Google Threat Intelligence
+Predator,YARA_String,/Users/gitlab_ci_2/builds/jb,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,/roe/ios1,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,-production/libs/Exploit,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,/private/var/tmp/l/voip_%lu_%u_PART.m4a,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,/private/var/tmp/etherium.txt,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,/private/var/tmp/kusama.txt,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,_gadget_pacia,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,ZN6Helper4Voip10setupHooksEvE3$_3,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,Hook 1 triggered! location:,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,KernelReaderI11CorelliumRWE,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,NSTaskROP20WithoutDeveloperMode,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,UMHookerI14RemoteTaskPort,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,callFunc: building PAC cache for,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,"select  tset  FROM tsettings WHERE INSTR(tset, ?)",GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,select * from tsettings WHERE length(sha256) > ?,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,isTrojanThreadERK,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,getpid from victim returned:,GTIG YARA hunt string,Google Threat Intelligence
+Predator,YARA_String,victim task kaddr:,GTIG YARA hunt string,Google Threat Intelligence
+Candiru_AdFection,SHA256,255869de85e2a171993fc5eb8a556d873a1b8966e040f6f55926f2fa2d595cc8,Candiru Windows DLL with C&C hardcoded (VirusTotal),Citizen Lab
+Candiru_AdFection,Domain,keyadapter.com,Candiru validator server matching Fingerprint V1,Citizen Lab
+Candiru_AdFection,Domain,sharethere.net,Candiru validator server matching Fingerprint V1,Citizen Lab
+Candiru_AdFection,Domain,fearevolve.com,Candiru C&C server matching Fingerprint C1,Citizen Lab
+Candiru_AdFection,Domain,insightenterprisells.com,Candiru C&C server matching Fingerprint C1,Citizen Lab
+Candiru_AdFection,Domain,jobmarcher.com,Candiru C&C server matching Fingerprint C1,Citizen Lab
+Candiru_AdFection,Domain,plasticbells.com,Candiru C&C server matching Fingerprint C1,Citizen Lab
+Candiru_AdFection,Domain,sincereaccertain.com,Candiru profiling server distributed via Discover-Tech ads,Citizen Lab
+Candiru_AdFection,Domain,d1fcoizt7mje85.cloudfront.net,Candiru/Discover-Tech Infinite FIFO CDN,Citizen Lab
+Candiru_AdFection,Domain,outdooutcome.com,Candiru profiling domain registered Mar 2025,Citizen Lab
+Candiru_AdFection,Domain,suggestutterly.com,Candiru profiling domain registered Mar 2025,Citizen Lab
+Candiru_AdFection,Domain,controlium.net,Discover-Tech Controlium platform,Citizen Lab
+Candiru_AdFection,Domain,powerium.net,Discover-Tech Controlium platform,Citizen Lab
+Candiru_AdFection,Domain,adv45.volasim.com,Discover-Tech Controlium instance,Citizen Lab
+Candiru_AdFection,Domain,adv50.volasim.com,Discover-Tech Controlium instance,Citizen Lab
+Candiru_AdFection,CNAME,discovertech-alb-100966113.us-east-1.elb.amazonaws.com,AWS ALB for Controlium platforms,Citizen Lab
+Candiru_AdFection,Domain,discovertech.us.auth0.com,Controlium Auth0 tenant,Citizen Lab
+Candiru_AdFection,Domain,pqv2.mtrtb.com,Discover-Tech NOAS / Infinite FIFO v2 QA,Citizen Lab
+Candiru_AdFection,Domain,ppv2.mtrtb.com,Discover-Tech NOAS / Infinite FIFO v2 production,Citizen Lab
+Candiru_AdFection,Domain,noas.mtrtb.com,Discover-Tech legacy NOAS server,Citizen Lab
+Candiru_AdFection,Domain,noas.powerium.net,Discover-Tech legacy NOAS server,Citizen Lab
+Candiru_AdFection,Domain,qa-noas.powerium.net,Discover-Tech QA NOAS server,Citizen Lab
+Candiru_AdFection,Domain,events.platc-tester.com,Mini Platform C NOAS,Citizen Lab
+Candiru_AdFection,Domain,events-ui.myweb3id.io,Mini Platform C UI,Citizen Lab
+Candiru_AdFection,Domain,events-ui.discover-tech.io,Mini Platform C UI,Citizen Lab
+Candiru_AdFection,Domain,logger.powerium.net,Discover-Tech event logger,Citizen Lab
+Candiru_AdFection,Domain,logger.controlium.net,Discover-Tech event logger,Citizen Lab
+Candiru_AdFection,Domain,dtech.adtimizer.co,Impression/click tracking (Beeswax),Citizen Lab
+Candiru_AdFection,Domain,noas.adtimizer.co,Discover-Tech NOAS via Adtimizer subdomain,Citizen Lab
+Candiru_AdFection,Domain,myinfoback.adtimizer.co,Discover-Tech infrastructure via Adtimizer,Citizen Lab
+Candiru_AdFection,Domain,tekma.adtimizer.co,Discover-Tech infrastructure via Adtimizer,Citizen Lab
+Candiru_AdFection,Domain,imp.powerium.net,Impression tracking,Citizen Lab
+Candiru_AdFection,Domain,tracker.mtrtb.com,Click/impression tracking,Citizen Lab
+Candiru_AdFection,Domain,myipinfo.io,Controlium OpSec decoder / MyIPInfo site,Citizen Lab
+Candiru_AdFection,Domain,events.myweb3id.io,ID syncing with Yandex,Citizen Lab
+Candiru_AdFection,Domain,tracookiepixel.xyz,ID syncing with Beeswax,Citizen Lab
+Candiru_AdFection,Domain,js.tracookiepixel.xyz,Tracking pixel JS,Citizen Lab
+Candiru_AdFection,Domain,js.cookie-sync.xyz,Older tracking pixel JS,Citizen Lab
+Candiru_AdFection,Domain,cookiesurfer.com,Tracking pixel site,Citizen Lab
+Candiru_AdFection,Domain,mydsp.io,Discover-Tech DSP,Citizen Lab
+Candiru_AdFection,Domain,mtrtb.com,Discover-Tech DSP / bidding data,Citizen Lab
+Candiru_AdFection,Domain,discover-tech.io,Discover-Tech corporate site / tracking,Citizen Lab
+Candiru_AdFection,Domain,relevantech.com,Discover-Tech predecessor domain,Citizen Lab
+Candiru_AdFection,Domain,akedo.gg,Gaming platform / advertiser linked to Discover-Tech,Citizen Lab
+Candiru_AdFection,Domain,citymaster.io,Volasim game site linked to Discover-Tech,Citizen Lab
+Candiru_AdFection,Domain,remindmewhere.app,Volasim reminder app linked to Discover-Tech,Citizen Lab
+Candiru_AdFection,Domain,volasim.com,Digital marketing agency linked to Controlium,Citizen Lab
+Candiru_AdFection,Domain,intelos.io,Mercenary ADINT vendor linked to Discover-Tech,Citizen Lab
+Candiru_AdFection,Domain,tekma-dmp.ai,Data marketing platform linked to Discover-Tech/Intelos,Citizen Lab
+Candiru_AdFection,Domain,tekma.io,Older Tekma site linked to same entity,Citizen Lab
+Candiru_AdFection,Domain,bindecy.com,Israeli spyware firm linked to Controlium users,Citizen Lab
+Candiru_AdFection,Domain,beachvibesnow.com,Bindecy-linked domain (cupid-ca cert),Citizen Lab
+Candiru_AdFection,Domain,enjoymultiplecats.com,Bindecy-linked domain,Citizen Lab
+Candiru_AdFection,Domain,icecreamtester.com,Bindecy-linked domain,Citizen Lab
+Candiru_AdFection,Domain,pickarest.com,Bindecy-linked domain,Citizen Lab
+Candiru_AdFection,Domain,infoanalytics.live,Bindecy-linked domain,Citizen Lab
+Candiru_AdFection,Domain,archer.westeurope.cloudapp.azure.com,Bindecy-linked Azure host,Citizen Lab
+Candiru_AdFection,Domain,bd-mainserver.herokuapp.com,Bindecy-linked Heroku app,Citizen Lab
+Candiru_AdFection,Domain,globaldatapoints.com,Intelos-linked ADINT platform,Citizen Lab
+Coruna,SHA256,2a9d21ca07244932939c6c58699448f2147992c1f49cd3bc7d067bd92cb54f3a,Coruna implant (com.apple.assistd),Google Threat Intelligence
+Coruna,BundleID,com.apple.assistd,Masquerading Apple daemon,Google Threat Intelligence
+Coruna,BundleID,com.sixdays.trust,Coruna module,Google Threat Intelligence
+Coruna,SHA256,1fb9dedf1de81d387eff4bd5e747f730dd03c440157a66f20fdb5e95f64318c0,Coruna module (com.sixdays.trust),Google Threat Intelligence
+Coruna,BundleID,com.uniswap.mobile,Coruna module,Google Threat Intelligence
+Coruna,SHA256,4dc255504a6c3ea8714ccdc95cc04138dc6c92130887274c8582b4a96ebab4a8,Coruna module (com.uniswap.mobile),Google Threat Intelligence
+Coruna,URL,http://cdn.uacounter.com/stat.html,UNC6353 Coruna delivery,Google Threat Intelligence
+Coruna,URL,https://ai-scorepredict.com/static/analytics.html,UNC6691 Coruna delivery,Google Threat Intelligence
+Coruna,URL,https://m.pc6.com/test/tuiliu/group.html,UNC6691 Coruna delivery,Google Threat Intelligence
+Coruna,URL,http://ddus17.com/tuiliu/group.html,UNC6691 Coruna delivery,Google Threat Intelligence
+Coruna,DGA_seed,lazarus,Generates 15-char .xyz fallback C2 domains,Google Threat Intelligence
+Coruna,Crypto,AES (SHA256 of static string),C2 traffic encryption,Google Threat Intelligence
+Coruna,MD5,1334417664270db20af705f422878c53c8378203,Coruna payload module hash byte-identical across Censys captures,Censys
+DarkSword,Domain,snapshare.chat,DarkSword delivery (UNC6748 Saudi Arabia),Google Threat Intelligence
+DarkSword,IP,62.72.21.10,GHOSTKNIFE C2 server (UNC6748 Nov 2025),Google Threat Intelligence
+DarkSword,Domain,e5.malaymoil.com,DarkSword delivery (PARS Defense Malaysia),Google Threat Intelligence
+DarkSword,Domain,static.cdncounter.net,DarkSword delivery via Ukrainian watering holes (UNC6353),Google Threat Intelligence
+DarkSword,Domain,sqwas.shapelie.com,GHOSTBLADE exfiltration server (UNC6353),Google Threat Intelligence
+DarkSword,Domain,sahibndn.io,DarkSword-related domain (iVerify STIX2),iVerify
+DarkSword,IP,72.60.98.48,DarkSword-related IP (iVerify STIX2),iVerify
+DarkSword,Domain,novosti.dn.ua,Ukrainian watering hole (iVerify/Lookout),iVerify
+DarkSword,Domain,7aac.gov.ua,Ukrainian watering hole (iVerify/Lookout),iVerify
+DarkSword,SHA256,2e5a56beb63f21d9347310412ae6efb29fd3db2d3a3fc0798865a29a3c578d35,Extracted GHOSTBLADE sample (UNC6353),Google Threat Intelligence
+DarkSword,Domain,siekeltd.com,Atlantic Council spear-phishing DarkSword payload domain,MalforsHQ/Google GTIG
+DarkSword,Domain,escofiringbijou.com,Atlantic Council spear-phishing DarkSword C2,MalforsHQ/Google GTIG
+DarkSword_P7,URL,https://cdn.gotoiphone.com,P7 exploit URL,iVerify
+DarkSword_P7,URL,https://mzpo30.cam/assets/js/group.html,P7 exploit URL,iVerify
+DarkSword_P7,Domain,agdx53.cc,P7 C2 server,iVerify
+DarkSword_P7,Domain,js.gotoiphone.com,P7 C2 server (path /ios18),iVerify
+DarkSword_P7,SHA256,c9f8bf92af34239f68e6be9bed945d6e9b4e2d5fc6883a501bc85e3c88a761b7,P7 rce_loader.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,eb6da327d5e456a594a066fda2140234ffad305fb204556477718dfce31afe81,P7 rce_loader.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,f9b3ea20bdd1a8650d31b6053c87a1d684ff86a64212662f1850f9e67fb5521b,P7 rce_module.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,92c7d246d2c163c076f783dcc19f87f5b9b9ac301b106b87a7aaea9346ce0052,P7 rce_module.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,37efaa4237a28a4be411d40de80b2935be5b8c4e6731ee1f858c609142a87445,P7 rce_module_18.6.js,iVerify
+DarkSword_P7,SHA256,e709457ac7fc6a00a1d7940ff8c1ec5370678b4f47fd7942180517bd2f1421cb,P7 rce_module_18.7.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,73fb3a5a03e630f36deb2c31b77f2e48289c90d2e840746715ebf2c5847584d4,P7 rce_module_18.7.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,489e0e59c1a1fbe92aa692a700b32eb84b47c8f9c757fe61325c028a3a6caeef,P7 rce_worker_18.4.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,71fe83847cdaf8c4d6c1aca90078dc4021cb96010062279d26338f06b4a7ba06,P7 rce_worker_18.4.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,9b6ca11dcd1c6c57ef056a1f6452a38fb1c2ead452057755db37a921ac63b1be,P7 rce_worker_18.5.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,7bec1ec0337c12aa49b83e40f3b7659d9d332ecbd1fd209fd1b948086ec2768c,P7 rce_worker_18.6.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,4df20a173ae6da2291fd66cb28a165958a9a6f5998ef9a19e4e143b120f1a844,P7 rce_worker_18.6.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,77238255f541274ed0c8c1e5e0ffe034532a210a3aaba94d63a05a3499362022,P7 rce_worker_18.7.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,49a279c21493e24fcd5c6ce6d898e194a7252da5851e8ff7b7715b97137861fe,P7 sbx0_main_18.4.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,a5ca944459c08038bfabf7ddbfc6ec2505ef0dc22b987569ed295f7378f30d59,P7 sbx0_main_18.4.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,f97aa214f10ede8c93acaae0bd975d945fda3fdb8a98af2977ca168467bdf214,P7 sbx1_main.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,c1b05dd8e7d060d2a40a859211528e90e62d0dc378f8af831933fe59122490dd,P7 sbx1_main.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,e7d3a07164d26f31e6305639119942d5ae26a7056c2fc86441ecd6b5ae9e17b6,P7 pe_worker.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,30286dc1fe4ecee65c890a4f2058cc01d2c7c55298cd7a078425e50ae2053579,P7 pe_worker.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,c6587d10462c81c66c0798378710f492c7725a91d86c8e541cf66211bff4abff,P7 c2_agent.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,46a3234bf6589e73e1a6d52ce5979e3149ccaa2af7202228fd907b807cc4debc,P7 c2_agent.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,47c2d77f0b15b9f2b237ba534e6dd4392f57d3c75a16fea2dc1b7fa25d312794,P7 keychain_copier.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,f0f0aa82a03bf4835864a5b7f7ba38e537f3f81e82b3db311ac0d80b4b4b022e,P7 keychain_copier.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,56ac6331f874118692dc8a1250a31c0340a5642adad8a431b33ba1d9c2865afb,P7 free_thread.js,iVerify
+DarkSword_P7,SHA256,225377bb96b9ec642042d6e6379d3ac908edd08dc5dca6df7ac5f68d407b6e16,P7 loader.js (cdn.gotoiphone.com),iVerify
+DarkSword_P7,SHA256,d554f534fad7822cbde9ca7d9f6efe8a7e0f5786ccee60f8db6dad340a2a6f80,P7 loader.js (mzpo30.cam),iVerify
+DarkSword_P7,SHA256,48aacf46ad8b7f619d7f4346c330abfbda14a34ed3eb98c215a5ef5fb36e2171,P7 MigFilterBypassThread.js,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/keychain_c2_dump.json.tmp,In-progress keychain dump,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/keychain_c2_dump.json,Final keychain dump,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/keychain_c2_dump.done,4-byte marker file,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/p7_debug.log,Debug log of P7 keychain-theft phase,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/c2_wallet_debug.log,Keychain-decryption pipeline trace,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/_hq_notestore,Copy of victim Apple Notes database,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/_hq_notestore-wal,Copy of Apple Notes WAL,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/_hq_notestore-shm,Copy of Apple Notes SHM,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/notes.sqlite,Copy of Apple Notes SQLite database,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/notes.sqlite-wal,Copy of Apple Notes WAL,iVerify
+DarkSword_P7,FilePath,/private/var/tmp/notes.sqlite-shm,Copy of Apple Notes SHM,iVerify
+DarkSword_P7,FilePath,/var/mobile/Library/Caches/ios_disk_scan.txt,disk_scan handler output,iVerify
+DarkSword_P7,FilePath,/var/mobile/ios_disk_scan.txt,disk_scan handler output,iVerify
+DarkSword_P7,localStorage,lab_device_uuid,cdn.gotoiphone.com localStorage variable,iVerify
+DarkSword_P7,localStorage,__ds_inflight_worker,cdn.gotoiphone.com localStorage variable,iVerify
+DarkSword_P7,localStorage,__ds_inflight_ts,cdn.gotoiphone.com localStorage variable,iVerify
+DarkSword_P7,localStorage,_ds_crash_count<worker>,cdn.gotoiphone.com localStorage variable,iVerify
+DarkSword_P7,localStorage,__ds_skip_workers,cdn.gotoiphone.com localStorage variable,iVerify
+DarkSword_P7,localStorage,_ds_crash_mid<worker>,cdn.gotoiphone.com localStorage variable,iVerify
+DarkSword_P7,localStorage,_x_pe_done,mzpo30.cam localStorage variable,iVerify
+DarkSword_P7,localStorage,_x_try,mzpo30.cam localStorage variable,iVerify
+DarkSword_P7,localStorage,_x_try_ts,mzpo30.cam localStorage variable,iVerify
+DarkSword_P7,localStorage,_x_ok,mzpo30.cam localStorage variable,iVerify
+DarkSword_P7,C2_Endpoint,/beacon,Tasking poll every 15 seconds,iVerify
+DarkSword_P7,C2_Endpoint,/result,Raw file exfiltration,iVerify
+DarkSword_P7,C2_Endpoint,/a,Registration,iVerify
+DarkSword_P7,C2_Endpoint,/event,Heartbeat,iVerify
+DarkSword_P7,C2_Endpoint,/u,Installed applications inventory exfiltration,iVerify
+DarkSword_P7,C2_Endpoint,/nb,Notes exfiltration,iVerify
+DarkSword_P7,C2_Endpoint,/p,Photos exfiltration,iVerify
+DarkSword_P7,C2_Endpoint,/war,Keychain + Wallets exfiltration,iVerify
+DarkSword_P7,User_Agent,Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML like Gecko) Version/18.5 Mobile/15E148 Safari/604.1,Hardcoded C2 User-Agent,iVerify
+DarkSword_P7,Content_Type,boundary=------HqBound,Hardcoded Content-Type for /p endpoint,iVerify
+DarkSword,FilePath,/private/var/tmp/keychain_dump.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/Keychains/keychain_dump.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/keybags/keychain_dump.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/run/keychain_dump.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/db/keychain_dump.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/root/keychain_dump.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/log/keychain_dump.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/keychain-2.db,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/persona.kb,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/usersession.kb,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/backup_keys_cache.sqlite,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/persona_private.kb,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/usersession_private.kb,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/System.keybag,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/Backup.keybag,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/persona_keychains.kb,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/usersession_keychains.kb,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/device.kb,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/wifi_passwords.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/wifi_passwords_securityd.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/private/var/tmp/icloud_dump/,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,FilePath,/var/wireless/wifi_passwords.txt,Keychain/WiFi/iCloud dump artifact,iVerify/Censys
+DarkSword,LogMessage,[DarkSword-WIFI-DUMP] in mediaplaybackd,High-confidence infection indicator,iVerify
+DarkSword,LogMessage,[CHAIN] .. [MAIN] .. [DRIVER-NEWTHREAD] ... [MIG_FILTER_BYPASS] ... [TASKROP] ... [TASK] ...,High-confidence infection indicator,iVerify
+DarkSword,Crash,SpringBoard WATCHDOG,Low-confidence exploitation signal,iVerify
+DarkSword,Crash,wifid WATCHDOG,Low-confidence exploitation signal,iVerify
+DarkSword,Crash,runningboardd WATCHDOG,Low-confidence exploitation signal,iVerify
+DarkSword,Crash,configd WATCHDOG,Low-confidence exploitation signal,iVerify
+DarkSword,Crash,securityd EXC_ARM_DA_ALIGN at 0x201,Medium-confidence signal,iVerify
+DarkSword,Crash,UserEventAgent EXC_ARM_DA_ALIGN at 0x201,Medium-confidence signal,iVerify
+DarkSword,Crash,WebContent/GPU various crashes,Low-confidence signal (clusters are suspicious),iVerify
+DarkSword,YARA,G_Backdoor_GHOSTKNIFE_1,Google-published detection rule,Google Threat Intelligence
+DarkSword,YARA,Censys_DarkSword_44_rules,Censys 44 YARA rules covering full binary surface,Censys
+DarkSword,STIX2,DarkSword.stix2,iVerify MVT-compatible IOC file,iVerify
+DarkSword,STIX2,DarkSword-Suspicious-Domains.stix2,iVerify MVT-compatible IOC file,iVerify
+DarkSword,IP,43.134.165.205,Open-directory cluster host:9999 Tencent Cloud DS-Fusion v1.0,Censys
+DarkSword,IP,166.88.95.90,Open-directory cluster host:9999 Evoxt Japan operational C2,Censys
+DarkSword,IP,23.148.212.237,Open-directory cluster host:8888 operator analysis workspace,Censys
+DarkSword,IP,47.102.192.23,Open-directory cluster host:9876 Alibaba Cloud Coruna staging,Censys
+DarkSword,IP,156.239.230.120,Open-directory cluster host:8080/80 full C2 platform,Censys
+DarkSword,IP,183.154.173.30,Victim IP CHINANET Hangzhou iOS 16.3.1 beaconing,Censys
+DarkSword,IP,182.239.114.223,Victim IP China Mobile Hong Kong iOS 16.1 beaconing,Censys
+DarkSword,IP,112.213.108.85,Live production server (hdios.cn),Censys
+DarkSword,Domain,hdios.cn,Live production server hostname,Censys
+DarkSword,IP,154.18.187.160,Backup delivery stack (fc.rsqqq.top),Censys
+DarkSword,Domain,fc.rsqqq.top,Backup delivery stack hostname,Censys
+DarkSword,IP,202.146.222.253,Old production server (i.131422.com),Censys
+DarkSword,Domain,i.131422.com,Old production hostname,Censys
+DarkSword,IP,203.91.77.253,Operator work machine (st.onlinefc.top),Censys
+DarkSword,Domain,st.onlinefc.top,Operator work machine hostname,Censys
+DarkSword,Domain,66ds.lol,Wild-build wallet module C2 Cloudflare-fronted,Censys
+DarkSword,IP,101.35.158.183,Origin behind 66ds.lol (Tencent Shanghai),Censys
+DarkSword,Domain,iplcz.cn,IPLCZ Test Lab parent domain,Censys
+DarkSword,Domain,northlab.cn,Operator lab domain Shenyang mail/lab cluster,Censys
+DarkSword,Domain,g.northlab.cn,Leaked via origin :9443 cert SAN,Censys
+DarkSword,Domain,manager.g.northlab.cn,Leaked via origin :9443 cert SAN,Censys
+DarkSword,IP,218.25.85.177,northlab.cn China Unicom Shenyang,Censys
+DarkSword,IP,218.25.85.178,northlab.cn China Unicom Shenyang,Censys
+DarkSword,IP,59.46.4.117,northlab.cn China Telecom Shenyang,Censys
+DarkSword,IP,59.46.4.119,northlab.cn China Telecom Shenyang,Censys
+DarkSword,IP,154.217.250.206,C2 PANEL v3.0 Ghost/Phantom Group,Censys
+DarkSword,IP,14.128.47.81,C2 panel same group name different build,Censys
+DarkSword,Domain,ccwu.cc,C2 panel forward DNS hostname,Censys
+DarkSword,Domain,wumian.cc.cd,C2 panel forward DNS hostname,Censys
+DarkSword,IP,154.219.127.147,Staging host in production package (exclude from IOC lists per Censys),Censys
+DarkSword,IP,154.219.127.94,Egress IP (exclude from IOC lists per Censys),Censys
+DarkSword,SHA256,c391bce7b09a0ea263e4b2c1d1bde0327c180723fa3299b006485429564c61ee,bootstrap.dylib stage-0 beacon,Censys
+DarkSword,SHA256,8973e80ab494c02463d4123f76fc5e2dca2ea2c097317d246323d75c1f2eb791,stage2.dylib plasma controller,Censys
+DarkSword,SHA256,a50c4da5c92636b2b1f170cdce3bd967a213886a8df5656cf3519214fcecfac5,core_v6.dylib plasma_core implant (lab),Censys
+DarkSword,SHA256,54a4166ab33ffe02b41de9c943e783d20129b6cc22f56b7fe7d564fd02bde006,core_a5.dylib plasma_core implant (production),Censys
+DarkSword,SHA256,7ff5bb16cd5f8c92bc4fec72bba162662f202af075418db5000a1b4f81489fc2,future-destroy.htm SpringBoard injection coordinator,Censys
+DarkSword,String,Ek8pl31K2yeHgQwy,Shared exfil channel AES key,Censys
+DarkSword,String,UNDEFINED_DEPLOYMENT_SEED,Wallet module deployment DGA seed,Censys
+DarkSword,String,UNDEFINED_REPORTING_SEED,Wallet module reporting DGA seed,Censys
+DarkSword,String,c73dfcfd60a0c7ebcc03352d433349bc,7z fallback transport password,Censys
+DarkSword,String,09d0b8d58a71653cd1c89c64c866f2e6,plasma_core deployment DGA seed,Censys
+DarkSword,String,2d2aebba0bf3d7d694194a7ab93b0a96,plasma_core reporting DGA seed,Censys
+DarkSword,URL,http://199.30.90.154:18090,Hardcoded lab deploy host fallback C2,Censys
+DarkSword,FilePath,/Library/LaunchDaemons/com.apple.ds.agent.plist,Persistence LaunchDaemon label com.apple.ds.agent,Censys
+DarkSword,FilePath,/tmp/nb_cmd,IPC command channel,Censys
+DarkSword,FilePath,/tmp/nb_result,IPC result channel,Censys
+DarkSword,Cookie,ds_uuid,Implant cookie,Censys
+DarkSword,Cookie,ds_done,Implant cookie,Censys
+DarkSword,Cookie,coruna-lab-session,Implant cookie,Censys
+SparkCat/SparkKitty,iOS_App,币coin,Trojanized App Store app,Kaspersky
+SparkCat/SparkKitty,iOS_App,TikTok mod,Sideloaded TikTok clone with enterprise profile,Kaspersky
+SparkCat/SparkKitty,Android_App,SOEX,Trojanized Google Play app (>10000 downloads),Kaspersky
+SparkCat/SparkKitty,Framework,Fake AFNetworking.framework,Malicious iOS framework,Kaspersky
+SparkCat/SparkKitty,Framework,Fake Alamofire.framework,Malicious iOS framework (same code),Kaspersky
+SparkCat/SparkKitty,Library,wc.dylib,Obfuscated malicious iOS library,Kaspersky
+SparkCat/SparkKitty,Library,libswiftDarwin.dylib,Disguised malicious iOS library,Kaspersky
+SparkCat/SparkKitty,TeamID,EHQ3N2D5WH,Enterprise provisioning profile Team ID,Kaspersky
+SparkCat/SparkKitty,BundleID,com.ss-tpc.rd.rdcUniApp,Malicious TikTok mod bundle ID,Kaspersky
+SparkCat/SparkKitty,BundleID,com.zhiliaoapp.musically,TikTok bundle ID used in User-Agent,Kaspersky
+SparkCat/SparkKitty,Selector,+[AFImageDownloader load],Malicious payload entry point,Kaspersky
+SparkCat/SparkKitty,Selector,[AFImageDownloader receiptID:andPicID:],Photo exfiltration/upload selector,Kaspersky
+SparkCat/SparkKitty,Selector,[AppDelegate requestSuccess:],Handler for i.bicoin.com.cn responses,Kaspersky
+SparkCat/SparkKitty,Class,KYDeviceActionManager,Photo-sending functionality class,Kaspersky
+SparkCat/SparkKitty,PlistKey,ccool=77e1a4d360e17fdbc,Malware activation key in Info.plist,Kaspersky
+SparkCat/SparkKitty,PlistKey,ccc,Base64-encoded encrypted C2 list in framework Info.plist,Kaspersky
+SparkCat/SparkKitty,UserDefaultsKey,com.tt.cf,Fallback encrypted C2 string key,Kaspersky
+SparkCat/SparkKitty,AES_Key,p0^tWut=pswHL-x>>:m?^.^)W,AES-256-ECB key padded to 32 bytes,Kaspersky
+SparkCat/SparkKitty,AES_Key,J9^tMnt=ptfHL-x>>:m!^.^)A,Alternative AES-256-ECB key,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/getImageStatus,GET server permission check,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/putImages,PUT photo exfiltration,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/anheartbeat,GET heartbeat,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/putDataInfo,PUT image+device info exfiltration,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/getStatus,GET device status check (wc.dylib variant),Kaspersky
+SparkCat/SparkKitty,User_Agent,TikTok/31.4.0 (iPhone; iOS 14.8; Scale/3.00),Hardcoded exfiltration User-Agent,Kaspersky
+SparkCat/SparkKitty,Content_Type,Boundary+C9D8BE3781515E01,Multipart boundary for photo upload,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://moabc.vip/?dev=az,Base64 configuration file URL for TikTok mods,Kaspersky
+SparkCat/SparkKitty,Domain,moabc.vip,Configuration host for TikTok mods,Kaspersky
+SparkCat/SparkKitty,Domain,h1997.tiktokapp.club,TikTok mod store link,Kaspersky
+SparkCat/SparkKitty,Domain,i.bicoin.com.cn,Server for 币coin app responses,Kaspersky
+SparkCat/SparkKitty,C2_IP,23.249.28.88,SparkKitty C2 server port 7777,Kaspersky
+SparkCat/SparkKitty,C2_IP,120.79.8.107,SparkKitty C2 server,Kaspersky
+SparkCat/SparkKitty,C2_IP,23.249.28.200,SparkKitty C2 server,Kaspersky
+SparkCat/SparkKitty,C2_IP,47.119.171.161,SparkKitty C2 server,Kaspersky
+SparkCat/SparkKitty,C2_Domain,api.fxsdk.com,SparkKitty C2 domain,Kaspersky
+SparkCat/SparkKitty,ConfigURL,http://120.78.239.17:10011/req.txt,Configuration storage,Kaspersky
+SparkCat/SparkKitty,ConfigURL,http://39.108.186.119:10011/req.txt,Configuration storage,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://dhoss-2023.oss-cn-beijing.aliyuncs.com/path/02WBUfZTUvxrTMGjh7Uh,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://sdk-data-re.oss-accelerate.aliyuncs.com/JMUCe7txrHnxBr5nj.txt,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://gitee.com/bbffipa/data-group/raw/master/02WBUfZTUvxrTMGjh7Uh,Gitee config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://ok2025-oss.oss-cn-shenzhen.aliyuncs.com/ip/FM4J7aWKeF8yK,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://file-ht-2023.oss-cn-shenzhen.aliyuncs.com/path/02WBUfZTUvxrTMGjh7Uh,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://afwfiwjef-mgsdl-2023.oss-cn-shanghai.aliyuncs.com/path/02WBUfZTUvxrTMGjh7Uh,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://zx-afjweiofwe.oss-cn-beijing.aliyuncs.com/path/02WBUfZTUvxrTMGjh7Uh,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://dxifjew2.oss-cn-beijing.aliyuncs.com/path/02WBUfZTUvxrTMGjh7Uh,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://data-sdk2.oss-accelerate.aliyuncs.com/file/SGTMnH951121,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://1111333.cn-bj.ufileos.com/file/SGTMnH951121,UFile OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://tbetter-oss.oss-accelerate.aliyuncs.com/ip/CF4J7aWKeF8yKVKu,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://photo-php-all.s3.ap-southeast-1.amazonaws.com/app/domain.json,AWS S3 config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://c1mon-oss.oss-cn-hongkong.aliyuncs.com/J2A3SWc2YASfQ2,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://tbetter-oss.oss-cn-guangzhou.aliyuncs.com/ip/JZ24J7aYCeNGyKVF2,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,ConfigURL,https://data-sdk.oss-accelerate.aliyuncs.com/file/SGTMnH951121,Alibaba OSS config,Kaspersky
+SparkCat/SparkKitty,DistributionURL,https://lt.laoqianf14.top/KJnn,Infected app download link,Kaspersky
+SparkCat/SparkKitty,DistributionURL,https://lt.laoqianf15.top/KJnn,Infected app download link,Kaspersky
+SparkCat/SparkKitty,DistributionURL,https://lt.laoqianf51.top/KJnn,Infected app download link,Kaspersky
+SparkCat/SparkKitty,DistributionURL,https://yjhjymfjnj.wyxbmh.cn/2kzos8,Infected app download link,Kaspersky
+SparkCat/SparkKitty,DistributionURL,https://xt.xinqianf38.top/RnZr,Infected app download link,Kaspersky
+SparkCat/SparkKitty,DistributionPage,https://accgngrid.com,Page distributing Trojans,Kaspersky
+SparkCat/SparkKitty,DistributionPage,https://byteepic.vip,Page distributing Trojans,Kaspersky
+SparkCat/SparkKitty,FilePath,/sdcard/aray/cache/devices/.DEVICES,Android marker file,Kaspersky
+SparkCat/SparkKitty,String,B0B5C3215E6D,Android debug marker MD5 comparison,Kaspersky
+SparkCat/SparkKitty,Detection,HEUR:Trojan-Spy.AndroidOS.SparkKitty.*,Kaspersky Android detection,Kaspersky
+SparkCat/SparkKitty,Detection,HEUR:Trojan-Spy.IphoneOS.SparkKitty.*,Kaspersky iOS detection,Kaspersky
+SparkCat/SparkKitty,Detection,HEUR:Trojan.IphoneOS.SparkCat.*,Kaspersky iOS detection,Kaspersky
+SparkCat/SparkKitty,Detection,HEUR:Trojan.AndroidOS.SparkCat.*,Kaspersky Android detection,Kaspersky
+SparkCat/SparkKitty,MD5,21ef7a14fee3f64576f5780a637c57d1,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,6d39cd8421591fbb0cc2a0bce4d0357d,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,c6a7568134622007de026d22257502d5,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,307a64e335065c00c19e94c1f0a896f2,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,fe0868c4f40cbb42eb58af121570e64d,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,f9ab4769b63a571107f2709b5b14e2bc,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,2b43b8c757c872a19a30dcdcff45e4d8,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,0aa1f8f36980f3dfe8884f1c6f5d6ddc,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,a4cca2431aa35bb68581a4e848804598,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,e5186be781f870377b6542b3cecfb622,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,2d2b25279ef9365420acec120b98b3b4,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,149785056bf16a9c6964c0ea4217b42b,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,931399987a261df91b21856940479634,Infected iOS app,Kaspersky
+SparkCat/SparkKitty,MD5,8c9a93e829cba8c4607a7265e6988646,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,b3085cd623b57fd6561e964d6fd73413,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,44bc648d1c10bc88f9b6ad78d3e3f967,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,0d7ed6df0e0cd9b5b38712d17857c824,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,b0eda03d7e4265fe280360397c042494,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,fd4558a9b629b5abe65a649b57bef20c,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,1b85522b964b38de67c5d2b670bb30b1,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,ec068e0fc6ffda97685237d8ab8a0f56,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,f10a4fdffc884089ae93b0372ff9d5d1,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,3388b5ea9997328eb48977ab351ca8de,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,931085b04c0b6e23185025b69563d2ce,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,7e6324efc3acdb423f8e3b50edd5c5e5,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,8cfc8081559008585b4e4a23cd4e1a7f,Malicious iOS framework (fake AFNetworking/Alamofire),Kaspersky
+SparkCat/SparkKitty,MD5,0b7891114d3b322ee863e4eef94d8523,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,0d09c4f956bb734586cee85887ed5407,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,2accfc13aaf4fa389149c0a03ce0ee4b,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,5b2e4ea7ab929c766c9c7359995cdde0,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,5e47604058722dae03f329a2e6693485,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,9aeaf9a485a60dc3de0b26b060bc8218,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,21a257e3b51561e5ff20005ca8f0da65,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,0752edcf5fd61b0e4a1e01371ba605fd,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,489217cca81823af56d141c985bb9b2c,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,b0976d46970314532bc118f522bb8a6f,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,f0460bdca0f04d3bd4fc59d73b52233b,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,f0815908bafd88d71db660723b65fba4,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+SparkCat/SparkKitty,MD5,6fe6885b8f6606b25178822d7894ac35,Obfuscated malicious iOS library (wc.dylib / libswiftDarwin.dylib),Kaspersky
+FakeWallet,TTP,App Store phishing,26 phishing apps masquerading as crypto wallets,Kaspersky
+FakeWallet,MimickedApp,MetaMask,Wallet app impersonated,Kaspersky
+FakeWallet,MimickedApp,Ledger,Wallet app impersonated,Kaspersky
+FakeWallet,MimickedApp,Trust Wallet,Wallet app impersonated,Kaspersky
+FakeWallet,MimickedApp,Coinbase,Wallet app impersonated,Kaspersky
+FakeWallet,MimickedApp,TokenPocket,Wallet app impersonated,Kaspersky
+FakeWallet,MimickedApp,imToken,Wallet app impersonated,Kaspersky
+FakeWallet,MimickedApp,Bitpie,Wallet app impersonated,Kaspersky
+FakeWallet,Detection,HEUR:Trojan-PSW.IphoneOS.FakeWallet.*,Kaspersky detection,Kaspersky
+FakeWallet,Detection,HEUR:Trojan.IphoneOS.FakeWallet.*,Kaspersky detection,Kaspersky
+FakeWallet,URL,https://www.gxzhrc.cn/download/,Phishing download,Kaspersky
+FakeWallet,URL,https://appstoreios.com/DjZH?key=646556306F6Q465O313L737N3332939Y353I830F31,Phishing download,Kaspersky
+FakeWallet,URL,https://crypto-stroe.cc/,Phishing store,Kaspersky
+FakeWallet,URL,https://yjzhengruol.com/s/3f605f,Phishing link,Kaspersky
+FakeWallet,URL,https://6688cf.jhxrpbgq.com/6axqkwuq,Sideload distribution,Kaspersky
+FakeWallet,URL,https://xz.apps-store.im/s/iuXt?key=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://xz.apps-store.im/DjZH?key=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://xz.apps-store.im/s/dDan?key=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://xz.apps-store.im/CqDq?key=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://ntm0mdkzymy3n.oukwww.com/7nhn7jvv5YieDe7P?0e7b9c78e=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://ntm0mdkzymy3n.oukwww.com/jFms03nKTf7RIZN8?61f68b07f8=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://nziwytu5n.lahuafa.com/10RsW/mw2ZmvXKUEbzI0n,Sideload distribution,Kaspersky
+FakeWallet,URL,https://zdrhnmjjndu.ulbcl.com/7uchSEp6DIEAqux?a3f65e=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://zdrhnmjjndu.ulbcl.com/tWe0ASmXJbDz3KGh?4a1bbe6d=...,Sideload distribution,Kaspersky
+FakeWallet,URL,https://api.npoint.io/153b165a59f8f7d7b097,Configuration JSON,Kaspersky
+FakeWallet,URL,https://mti4ywy4.lahuafa.com/UVB2U/mw2ZmvXKUEbzI0n,Sideload distribution,Kaspersky
+FakeWallet,URL,https://mtjln.siyangoil.com/08dT284P/1ZMz5Xmb0EoQZVvS5,Sideload distribution,Kaspersky
+FakeWallet,URL,https://odm0.siyangoil.com/TYTmtV8t/JG6T5nvM1AYqAcN,Sideload distribution,Kaspersky
+FakeWallet,URL,https://mgi1y.siyangoil.com/vmzLvi4Dh/1Dd0m4BmAuhVVCbzF,Sideload distribution,Kaspersky
+FakeWallet,URL,https://mziyytm5ytk.ahroar.com/kAN2pIEaariFb8Yc,Sideload distribution,Kaspersky
+FakeWallet,URL,https://ngy2yjq0otlj.ahroar.com/EpCXMKDMx1roYGJ,Sideload distribution,Kaspersky
+FakeWallet,URL,https://ngy2yjq0otlj.ahroar.com/17pIWJfr9DBiXYrSb,Sideload distribution,Kaspersky
+FakeWallet,C2,https://kkkhhhnnn.com/api/open/postByTokenpocket,Seed exfiltration,Kaspersky
+FakeWallet,C2,https://helllo2025.com/api/open/postByTokenpocket,Seed exfiltration,Kaspersky
+FakeWallet,C2,https://sxsfcc.com/api/open/postByTokenpocket,Seed exfiltration,Kaspersky
+FakeWallet,C2,https://iosfc.com/ledger/ios/Rsakeycatch.php,Ledger seed exfiltration,Kaspersky
+FakeWallet,C2,https://nmu8n.com/tpocket/ios/Rsakeyword.php,TokenPocket seed exfiltration,Kaspersky
+FakeWallet,C2,https://zmx6f.com/btp/ios/receiRsakeyword.php,Bitpie seed exfiltration,Kaspersky
+FakeWallet,C2,https://api.dc1637.xyz,C2 API,Kaspersky
+FakeWallet,IP,139.180.139.209,Configuration host,Kaspersky
+FakeWallet,MD5,4126348d783393dd85ede3468e48405d,Infected cryptowallet IPA file,Kaspersky
+FakeWallet,MD5,b639f7f81a8faca9c62fd227fef5e28c,Infected cryptowallet IPA file,Kaspersky
+FakeWallet,MD5,d48b580718b0e1617afc1dec028e9059,Infected cryptowallet IPA file,Kaspersky
+FakeWallet,MD5,bafba3d044a4f674fc9edc67ef6b8a6b,Infected cryptowallet IPA file,Kaspersky
+FakeWallet,MD5,79fe383f0963ae741193989c12aefacc,Infected cryptowallet IPA file,Kaspersky
+FakeWallet,MD5,8d45a67b648d2cb46292ff5041a5dd44,Infected cryptowallet IPA file,Kaspersky
+FakeWallet,MD5,7e678ca2f01dc853e85d13924e6c8a45,Infected cryptowallet IPA file,Kaspersky
+FakeWallet,MD5,be9e0d516f59ae57f5553bcc3cf296d1,Malicious dylib,Kaspersky
+FakeWallet,MD5,fd0dc5d4bba740c7b4cc78c4b19a5840,Malicious dylib,Kaspersky
+FakeWallet,MD5,7b4c61ff418f6fe80cf8adb474278311,Malicious dylib,Kaspersky
+FakeWallet,MD5,8cbd34393d1d54a90be3c2b53d8fc17a,Malicious dylib,Kaspersky
+FakeWallet,MD5,d138a63436b4dd8c5a55d184e025ef99,Malicious dylib,Kaspersky
+FakeWallet,MD5,5bdae6cb778d002c806bb7ed130985f3,Malicious dylib,Kaspersky
+FakeWallet,MD5,84c81a5e49291fe60eb9f5c1e2ac184b,Malicious React Native application,Kaspersky
+FakeWallet,MD5,19733e0dfa804e3676f97eff90f2e467,Phishing HTML for infected Ledger Live app,Kaspersky
+Packagist Chain,Target_iOS,18.4 – 18.6.x,iPhone XS through iPhone 16,Socket Security
+Packagist Chain,Vector,Trojanized Packagist/Composer themes,OphimCMS / KKPhim supply chain,Socket Security
+Packagist Chain,Patch,iOS 26.1 / macOS 26.1,Apple patch for kernel escape,Socket Security
+Packagist Chain,Payload,iOS Keychain wallet seed/mnemonic stealer,Targets multiple crypto wallets,Socket Security
+Packagist Chain,TTP,Redeployed 2026-08-12,New payload redeployed in August 2026,Socket Security
+Graphite,C2_URL,https://46.183.184.91/,Graphite C2 server,Citizen Lab
+Graphite,CVE,CVE-2025-43200,Graphite/Paragon zero-click iMessage exploit patched in iOS 18.3.1,Citizen Lab
+Graphite,TTP,Zero-click iMessage,No user interaction,Citizen Lab
+Graphite,TTP,Fingerprint P1,Forensic fingerprint for Paragon/Graphite server (details not public),Citizen Lab
+Operation Triangulation,C2,addatamarket.net,C&C domain,Kaspersky
+Operation Triangulation,C2,backuprabbit.com,C&C domain,Kaspersky
+Operation Triangulation,C2,businessvideonews.com,C&C domain,Kaspersky
+Operation Triangulation,C2,cloudsponcer.com,C&C domain,Kaspersky
+Operation Triangulation,C2,datamarketplace.net,C&C domain,Kaspersky
+Operation Triangulation,C2,mobilegamerstats.com,C&C domain,Kaspersky
+Operation Triangulation,C2,snoweeanalytics.com,C&C domain,Kaspersky
+Operation Triangulation,C2,tagclick-cdn.com,C&C domain,Kaspersky
+Operation Triangulation,C2,topographyupdates.com,C&C domain,Kaspersky
+Operation Triangulation,C2,unlimitedteacup.com,C&C domain,Kaspersky
+Operation Triangulation,C2,virtuallaughing.com,C&C domain,Kaspersky
+Operation Triangulation,C2,web-trackers.com,C&C domain,Kaspersky
+Operation Triangulation,C2,growthtransport.com,C&C domain,Kaspersky
+Operation Triangulation,C2,anstv.net,C&C domain,Kaspersky
+Operation Triangulation,C2,ans7tv.net,C&C domain,Kaspersky
+Operation Triangulation,Process,BackupAgent,Deprecated binary appearing in data usage timeline,Kaspersky
+Operation Triangulation,Process,IMTransferAgent,Downloads iMessage attachment ~242 KB,Kaspersky
+Operation Triangulation,FilePath,Library/SMS/Attachments/<hex>/<hex>,Empty attachment directories after deletion,Kaspersky
+Operation Triangulation,FilePath,com.apple.ImageIO.plist,Modified preference file,Kaspersky
+Operation Triangulation,FilePath,com.apple.locationd.StatusBarIconManager.plist,Modified preference file,Kaspersky
+Operation Triangulation,FilePath,com.apple.imservice.ids.FaceTime.plist,Modified preference file,Kaspersky
+Operation Triangulation,FilePath,com.apple.softwareupdateservicesd.plist,Modified to block iOS updates,Kaspersky
+Operation Triangulation,Process,com.apple.WebKit.WebContent,Data usage spike after exploitation,Kaspersky
+Operation Triangulation,Process,powerd,Data usage after exploitation,Kaspersky
+Operation Triangulation,Process,lockdownd,Data usage after exploitation,Kaspersky
+Operation Triangulation,TTP,iMessage zero-click,No user interaction,Kaspersky
+Operation Triangulation,TTP,Blocks iOS updates,Software Update Failed error message,Kaspersky
+Operation Triangulation,TTP,No persistence; reinfects after reboot,Requires repeated infection,Kaspersky
+APT29_DarkSword_Derivative,Domain,theowo.club,Fake AiTM website,Sekoia
+APT29_DarkSword_Derivative,IP,188.190.17.232,theowo.club IP,Sekoia
+APT29_DarkSword_Derivative,Domain,america250.holiday,Fake AiTM website,Sekoia
+APT29_DarkSword_Derivative,IP,192.121.46.25,america250.holiday IP,Sekoia
+APT29_DarkSword_Derivative,Domain,static.flux-telemetry.com,Delivery/exfiltration host,Sekoia
+APT29_DarkSword_Derivative,IP,109.104.106.107,static.flux-telemetry.com IP,Sekoia
+APT29_DarkSword_Derivative,Domain,edge-ord.clouds-stacks.com,Delivery/exfiltration host,Sekoia
+APT29_DarkSword_Derivative,IP,95.133.231.28,edge-ord.clouds-stacks.com IP,Sekoia
+APT29_DarkSword_Derivative,Domain,ad.starx-net.com,Delivery/exfiltration host,Sekoia
+APT29_DarkSword_Derivative,IP,195.58.140.105,ad.starx-net.com IP,Sekoia
+APT29_DarkSword_Derivative,URL,https://ad.starx-net.com:8881/telemetry/v12,Exfiltration endpoint,Sekoia
+APT29_DarkSword_Derivative,Domain,a.plerdy.com,Compromised Plerdy tracker source,Sekoia
+APT29_DarkSword_Derivative,SHA256,a7d2493df00565c21587b0cad2a9fe7ca1e5590acf796da6e499be0ffde44cc3,Class A Stage 1 iOS exploit chain,Sekoia
+APT29_DarkSword_Derivative,SHA256,bee3e014e3df87ddce0250b0985b87f6868a427a7b650a74b7ffedb9d57f3088,Class A Stage 2 iOS exploit chain,Sekoia
+APT29_DarkSword_Derivative,SHA256,c170fda024183645c0aa681149304e50506509c3498bb6b9a5f5ced6aa73e5fa,Class B Stage 1 iOS exploit chain,Sekoia
+APT29_DarkSword_Derivative,SHA256,2ffb35e3f9e55286a930fb887e73764a913166648135fe0ca7551736d97d7bfa,Class B Stage 2 iOS exploit chain,Sekoia
+APT29_DarkSword_Derivative,SHA256,69b6cb327a4d5da99399718f6a66f84de69f89425b0a31f2dcee0682f811596f,Class B Stage 3 iOS exploit chain,Sekoia
+APT29_DarkSword_Derivative,CVE,CVE-2025-43529,Class A and B WebContent JIT use-after-free,Sekoia
+APT29_DarkSword_Derivative,CVE,CVE-2024-27834,Class A cookie-theft path,Sekoia
+APT29_DarkSword_Derivative,CVE,CVE-2026-20700,Class B TPRO/PAC bypass,Sekoia
+APT29_DarkSword_Derivative,CVE,CVE-2025-14174,Class B ANGLE/GPU sandbox escape,Sekoia
+APT29_DarkSword_Derivative,CVE,CVE-2025-43510,Class B AppleM2ScalerCSCDriver COW,Sekoia
+APT29_DarkSword_Derivative,CVE,CVE-2025-43520,Class B kernel privilege escalation,Sekoia
+APT29_DarkSword_Derivative,String,5b4c8fea5cbcee273e8d830f52-temfp.js,UltimateFingerprinter script name,Sekoia
+General,CVE,CVE-2025-43200,Graphite/Paragon zero-click iMessage exploit patched iOS 18.3.1,Multiple
+General,CVE,CVE-2023-41993,Predator WebKit/Safari RCE patched iOS 16.7/17.0,Multiple
+General,CVE,CVE-2023-41992,Predator kernel IPC use-after-free sandbox escape/LPE,Multiple
+General,CVE,CVE-2023-41991,Predator iOS code-signing bypass/LPE,Multiple
+General,CVE,CVE-2025-48543,Intellexa/Predator exploit,Multiple
+General,CVE,CVE-2025-6554,Intellexa/Predator exploit,Multiple
+General,CVE,CVE-2024-4610,Intellexa/Predator exploit,Multiple
+General,CVE,CVE-2025-31277,DarkSword iOS 18.4-18.5 JIT RegExp RCE,Multiple
+General,CVE,CVE-2025-43529,DarkSword RCE; Sekoia/APT29 campaign,Multiple
+General,CVE,CVE-2026-20700,DarkSword TPRO/PAC bypass,Multiple
+General,CVE,CVE-2025-14174,DarkSword ANGLE/GPU sandbox escape,Multiple
+General,CVE,CVE-2025-43510,DarkSword AppleM2ScalerCSCDriver COW,Multiple
+General,CVE,CVE-2025-43520,DarkSword kernel privilege escalation,Multiple
+General,CVE,CVE-2024-27834,Cookie-theft exploit path,Multiple
+General,CVE,CVE-2024-4671,Related iOS exploit chain,Multiple
+General,CVE,CVE-2025-24201,DarkSword WebKit sandbox escape alternative < iOS 18.3.2,Multiple
+General,CVE,CVE-2025-31200,DarkSword CoreAudio zero-click claim unverified,Multiple
+General,CVE,CVE-2026-31001,DarkSword iOS 26 JavaScriptCore chain development only,Multiple
+General,CVE,CVE-2026-86950,Apple CoreGraphics PDF font flaw Sep 2026 patch,Multiple
+General,CVE,CVE-2026-112607,iOS out-of-bounds read,Multiple
+General,CVE,CVE-2026-112612,iOS path traversal physical access,Multiple
+General,CVE,CVE-2026-112507,iOS out-of-bounds write,Multiple
+General,CVE,CVE-2026-112690,iOS/macos path traversal CVSS 10.0,Multiple
+DarkSword,Domain,cdncounter.net,DarkSword delivery infrastructure,Google Threat Intelligence Group / Lookout
+DarkSword,Domain,cdn.cdncounter.net,DarkSword delivery subdomain,Google Threat Intelligence Group / Lookout
+DarkSword,Domain,count.cdncounter.net,DarkSword delivery subdomain,Google Threat Intelligence Group / Lookout
+DarkSword,IP,141.105.130.237,DarkSword C2 IP 2025-12-22 to 2026-03-17 (Lookout),Google Threat Intelligence Group / Lookout
+DarkSword,YARA_String,server_pub_ex,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,client_pri_ds,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,getfilebyExtention,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,getContOfFilesForModule,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,carPlayConnectionState,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,saveRecordingApp,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,getLastItemBack,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,the inherted class,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,passExtetion,GHOSTKNIFE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,sendDeviceInfoJson,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,merge2AppLists,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,send_command_to_upper_process,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,ChangeStatusCheckSleepInterval,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,SendRegEx,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,evalJsResponse.json,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,sendSimpleUploadJsonObject,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,device_info_all,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,getPayloadForSimpleStatusRequest,GHOSTSABER YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,/private/var/tmp/wifi_passwords.txt,GHOSTBLADE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,/private/var/tmp/wifi_passwords_securityd.txt,GHOSTBLADE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,/.com.apple.mobile_container_manager.metadata.plist,GHOSTBLADE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,X-Device-UUID: ${,GHOSTBLADE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,/installed_apps.txt,GHOSTBLADE YARA rule string,Google Threat Intelligence Group
+DarkSword,YARA_String,icloud_dump_,GHOSTBLADE YARA rule string,Google Threat Intelligence Group
+DarkSword,FilePath,src/InjectJS.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/Chain/Chain.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/Chain/Native.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/Chain/OffsetsStruct.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/Driver/Driver.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/Driver/DriverNewThread.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/Driver/Offsets.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/Driver/OffsetsTable.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/JSUtils/FileUtils.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/JSUtils/Logger.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/JSUtils/Utils.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/Exception.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/ExceptionMessageStruct.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/ExceptionReplyStruct.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/MachMsgHeaderStruct.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/PAC.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/PortRightInserter.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/RegistersStruct.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/RemoteCall.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/Sandbox.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/SelfTaskStruct.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/Task.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/TaskRop.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/Thread.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/ThreadState.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/VM.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/VmMapEntry.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/VMObject.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/VmPackingParams.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/libs/TaskRop/VMShmem.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,FilePath,src/MigFilterBypassThread.js,GHOSTBLADE/Webpack library artifact path,Google Threat Intelligence Group
+DarkSword,Command,ChangeStatusCheckSleepInterval,Changes sleep interval between C2 check-ins,Google Threat Intelligence Group
+DarkSword,Command,SendDeviceInfo,Uploads basic device information,Google Threat Intelligence Group
+DarkSword,Command,SendUserAccountsList,Uploads signed-in accounts,Google Threat Intelligence Group
+DarkSword,Command,SendAppList,Uploads installed applications,Google Threat Intelligence Group
+DarkSword,Command,SendCurrentLocation,Not directly implemented,Google Threat Intelligence Group
+DarkSword,Command,ExecuteSqliteQuery,Executes arbitrary SQLite query and uploads results,Google Threat Intelligence Group
+DarkSword,Command,UnwrapKey,No-op,Google Threat Intelligence Group
+DarkSword,Command,SendScreenshot,Not directly implemented,Google Threat Intelligence Group
+DarkSword,Command,SendWiFiInfo,Not directly implemented,Google Threat Intelligence Group
+DarkSword,Command,SendThumbnails,Uploads Photos app thumbnails in time window,Google Threat Intelligence Group
+DarkSword,Command,SendApp,Uploads files for specified installed application,Google Threat Intelligence Group
+DarkSword,Command,RecordAudio,Not directly implemented,Google Threat Intelligence Group
+DarkSword,Command,SendFiles,Uploads arbitrary file list,Google Threat Intelligence Group
+DarkSword,Command,SendRegEx,Uploads files matching regex path pattern,Google Threat Intelligence Group
+DarkSword,Command,SendFileList,Uploads recursive file/directory metadata list,Google Threat Intelligence Group
+DarkSword,Command,EvalJs,Executes arbitrary JavaScript blob,Google Threat Intelligence Group
+DarkSword,Target_Data,iMessage database,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,Telegram data,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,WhatsApp data,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,mail indexes,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,call logs,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,contacts,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,device/account identifiers,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,signed in accounts,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,keychains,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,SIM info,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,device profiles,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,location history,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,saved WiFi networks and passwords,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,Find My iPhone settings,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,Photos metadata,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,hidden photos,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,screenshots,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,iCloud Drive files,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,Notes database,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,Calendar database,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,cryptocurrency wallet data,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,Safari history/bookmarks/cookies,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,Health database,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,installed applications,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,Target_Data,cellular usage,Data category exfiltrated by GHOSTBLADE,Google Threat Intelligence Group
+DarkSword,AntiForensics,/var/mobile/Library/Logs/CrashReporter/mediaplaybackd,GHOSTKNIFE deletes crash logs matching these names,Google Threat Intelligence Group
+DarkSword,AntiForensics,/var/mobile/Library/Logs/CrashReporter/SpringBoard,GHOSTKNIFE deletes crash logs matching these names,Google Threat Intelligence Group
+DarkSword,AntiForensics,/var/mobile/Library/Logs/CrashReporter/com.apple.WebKit.,GHOSTKNIFE deletes crash logs matching these names,Google Threat Intelligence Group
+DarkSword,AntiForensics,/var/mobile/Library/Logs/CrashReporter/panic-full-,GHOSTKNIFE deletes crash logs matching these names,Google Threat Intelligence Group
+DarkSword,AntiForensics,/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.osanalytics/DiagnosticReports/,GHOSTBLADE deletes crash reports in this directory,Google Threat Intelligence Group
+DarkSword,ExploitFile,rce_loader.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,frame.html,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,rce_module.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,rce_module_18.6.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,rce_module_18.7.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,rce_worker_18.4.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,rce_worker_18.6.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,rce_worker_18.7.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,rce_worker_18.5.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,sbx0_main_18.4.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,sbx0_main.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,sbx1_main.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,ExploitFile,pe_main.js,DarkSword exploit chain stage filename,Google Threat Intelligence Group / iVerify
+DarkSword,JS_Artifact,"sessionStorage.setItem(""uid""",Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword,JS_Artifact,"sessionStorage.getItem(""uid"")",Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword,JS_Artifact,top.location.href,Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword,JS_Artifact,window.location.href,Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword,JS_Artifact,URL.createObjectURL,Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword,JS_Artifact,workerBlob,Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword,JS_Artifact,rce_worker,Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword,JS_Artifact,postMessage,Common DarkSword loader JavaScript artifact,Google Threat Intelligence Group
+DarkSword_P7,Command,execute_command,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,ls,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,download,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,photos,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,apps,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,exec,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,file_upload,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,basic_info,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,disk_scan,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,ios_app_data,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,wallet_extract,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,wallet_scan,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,memo_scan,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,photo_scan,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,sleep,P7 DarkSword C2 command,iVerify
+DarkSword_P7,Command,exit,P7 DarkSword C2 command,iVerify
+DarkSword,Domain,ad-track.live,Malicious Instagram ad delivery domain (DeadTag campaign),iVerify / Report URI
+DarkSword,TTP,DeadTag expired analytics tag abuse,Attackers buy expired ad/analytics tag domains to redirect iPhone visitors to exploit kits,iVerify / Report URI
+DarkSword,TTP,PrestaShop analytics folder implant,DarkSword loader planted in PrestaShop folders masquerading as analytics code,iVerify / Report URI
+DarkSword,TTP,Fake Polymarket page,Decoy page served both Coruna and P7 DarkSword by browser attack,iVerify / Report URI
+DarkSword,TTP,135 million visits/month,DeadTag operation reaches ~135 million monthly site visits,iVerify / Report URI
+DarkSword_P7,C2_URL,https://agdx53.cc,P7 C2 server,iVerify
+DarkSword_P7,C2_URL,https://js.gotoiphone.com/ios18,P7 C2 path,iVerify
+DarkSword_P7,Network_Artifact,boundary=------HqBound,Hardcoded multipart boundary for /p endpoint,iVerify
+Coruna,Domain,mxbc-v2.tjbjdod.cn,Exploit server (iVerify CryptoWaters),iVerify
+Coruna,Domain,aidm8it5hf1jmtj.xyz,Config and implant server,iVerify
+Coruna,Domain,uawwydy3qas6ykv.xyz,C2 communication,iVerify
+Coruna,URL,https://goodcryptocurrency.top/details/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,http://pepeairdrop01.com/static/analytics.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://osec2.668ddf.cc/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://pepeairdrop01.com/static/analytics.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://ios.teegrom.top/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://i.binaner.com/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://ajskbnrs.xn--jor0b302fdhgwnccw8g.com/gogo/list.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://sj9ioz3a7y89cy7.xyz/list.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://65sse.668ddf.cc/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://sadjd.mijieqi.cn/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://mkkku.com/static/analytics.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://dbgopaxl.com/static/goindex/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://w2a315.tubeluck.com/static/goindex/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://ose.668ddf.cc/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,http://cryptocurrencyworld.top/details/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://iphonex.mjdqw.cn/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,http://goodcryptocurrency.top/details/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://share.4u.game/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://26a.online/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://binancealliancesintro.com/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://4u.game/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,http://bestcryptocurrency.top/details/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://b27.icu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://h4k.icu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://so5083.tubeluck.com/static/goindex/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://seven7.vip/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://y4w.icu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://7ff.online/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://cy8.top/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://7uspin.us/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://seven7.to/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://4kgame.us/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://share.7p.game/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://www.appstoreconn.com/xmweb/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://k96.icu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://7fun.icu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://n49.top/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://98a.online/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://spin7.icu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://t7c.icu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://7p.game/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://lddx3z2d72aa8i6.xyz/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://anygg.liquorfight.com/88k4ez/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://goanalytics.xyz/88k4ez/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,http://land.77bingos.com/88k4ez/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://land.bingo777.now/88k4ez/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,http://land.bingo777.now/88k4ez/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,http://land.777bingos.xyz/88k4ez/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://btrank.top/tuiliu/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://dd9l7e6ghme8pbk.xyz/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://res54allb.xn--xkrsa0078bd6d.com/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://fxrhcnfwxes90q.xyz/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://kanav.blog/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,URL,https://3v5w1km5gv.xyz/group.html,UNC6691 Coruna exploit delivery URL,Google Threat Intelligence Group
+Coruna,Domain,vvri8ocl4t3k8n6.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,rlau616jc7a7f7i.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,ol67el6pxg03ad7.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,6zvjeulzaw5c0mv.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,ztvnhmhm4zj95w3.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,v2gmupm7o4zihc3.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,pen0axt0u476duw.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,hfteigt3kt0sf3z.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,xfal48cf0ies7ew.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,yvgy29glwf72qnl.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,lk4x6x2ejxaw2br.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,2s3b3rknfqtwwpo.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,xjslbdt9jdijn15.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,hui4tbh9uv9x4yi.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,xittgveqaufogve.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,xmmfrkq9oat1daq.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,lsnngjyu9x6vcg0.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,gdvynopz3pa0tik.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,o08h5rhu2lu1x0q.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,zcjdlb5ubkhy41u.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,8fn4957c5g986jp.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,sf2bisx5nhdkygn3l.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,roy2tlop2u.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,gqjs3ra34lyuvzb.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,eg2bjo5x5r8yjb5.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,Domain,b38w09ecdejfqsf.xyz,PLASMAGRID DGA-style C2 domain,Google Threat Intelligence Group
+Coruna,BundleID,com.apple.springboard,SpringBoard module,Google Threat Intelligence Group
+Coruna,SHA256,18394fcc096344e0730e49a0098970b1c53c137f679cff5c7ff8902e651cd8a3,SpringBoard module (com.apple.springboard),Google Threat Intelligence Group
+Coruna,BundleID,com.bitkeep.os,BitKeep wallet module,Google Threat Intelligence Group
+Coruna,SHA256,6eafd742f58db21fbaf5fd7636e6653446df04b4a5c9bca9104e5dfad34f547c,BitKeep wallet module (com.bitkeep.os),Google Threat Intelligence Group
+Coruna,BundleID,com.bitpie.wallet,Bitpie wallet module,Google Threat Intelligence Group
+Coruna,SHA256,42cc02cecd65f22a3658354c5a5efa6a6ec3d716c7fbbcd12df1d1b077d2591b,Bitpie wallet module (com.bitpie.wallet),Google Threat Intelligence Group
+Coruna,BundleID,coin98.crypto.finance.insights,Coin98 wallet module,Google Threat Intelligence Group
+Coruna,SHA256,0dff17e3aa12c4928273c70a2e0a6fff25d3e43c0d1b71056abad34a22b03495,Coin98 wallet module (coin98.crypto.finance.insights),Google Threat Intelligence Group
+Coruna,BundleID,org.toshi.distribution,Coinbase wallet module,Google Threat Intelligence Group
+Coruna,SHA256,05b5e4070b3b8a130b12ea96c5526b4615fcae121bb802b1a10c3a7a70f39901,Coinbase wallet module (org.toshi.distribution),Google Threat Intelligence Group
+Coruna,BundleID,exodus-movement.exodus,Exodus wallet module,Google Threat Intelligence Group
+Coruna,SHA256,10bd8f2f8bb9595664bb9160fbc4136f1d796cb5705c551f7ab8b9b1e658085c,Exodus wallet module (exodus-movement.exodus),Google Threat Intelligence Group
+Coruna,BundleID,im.token.app,imToken wallet module,Google Threat Intelligence Group
+Coruna,SHA256,91d44c1f62fd863556aac0190cbef3b46abc4cbe880f80c580a1d258f0484c30,imToken wallet module (im.token.app),Google Threat Intelligence Group
+Coruna,BundleID,com.kyrd.krystal.ios,Krystal wallet module,Google Threat Intelligence Group
+Coruna,SHA256,721b46b43b7084b98e51ab00606f08a6ccd30b23bef5e542088f0b5706a8f780,Krystal wallet module (com.kyrd.krystal.ios),Google Threat Intelligence Group
+Coruna,BundleID,io.metamask.MetaMask,MetaMask wallet module,Google Threat Intelligence Group
+Coruna,SHA256,25a9b004cf61fb251c8d4024a8c7383a86cb30f60aa7d59ca53ce9460fcfb7de,MetaMask wallet module (io.metamask.MetaMask),Google Threat Intelligence Group
+Coruna,BundleID,org.mytonwallet.app,MyTonWallet module,Google Threat Intelligence Group
+Coruna,SHA256,be28b40df919d3fa87ed49e51135a719bd0616c9ac346ea5f20095cb78031ed9,MyTonWallet module (org.mytonwallet.app),Google Threat Intelligence Group
+Coruna,BundleID,app.phantom,Phantom wallet module,Google Threat Intelligence Group
+Coruna,SHA256,3c297829353778857edfeaed3ceeeca1bf8b60534f1979f7d442a0b03c56e541,Phantom wallet module (app.phantom),Google Threat Intelligence Group
+Coruna,BundleID,com.skymavis.Genesis,Ronin/Sky Mavis module,Google Threat Intelligence Group
+Coruna,SHA256,499f6b1e012d9bc947eea8e23635dfe6464cd7c9d99eb11d5874bd7b613297b1,Ronin/Sky Mavis module (com.skymavis.Genesis),Google Threat Intelligence Group
+Coruna,BundleID,com.solflare.mobile,Solflare wallet module,Google Threat Intelligence Group
+Coruna,SHA256,d517c3868c5e7808202f53fa78d827a308d94500ae9051db0a62e11f7852e802,Solflare wallet module (com.solflare.mobile),Google Threat Intelligence Group
+Coruna,BundleID,com.global.wallet.ios,Global Wallet module,Google Threat Intelligence Group
+Coruna,SHA256,4dfcf5a71e5a8f27f748ac7fd7760dec0099ce338722215b4a5862b60c5b2bfd,Global Wallet module (com.global.wallet.ios),Google Threat Intelligence Group
+Coruna,BundleID,com.tonhub.app,Tonhub module,Google Threat Intelligence Group
+Coruna,SHA256,d371e3bed18ee355438b166bbf3bdaf2e7c6a3af8931181b9649020553b07e7a,Tonhub module (com.tonhub.app),Google Threat Intelligence Group
+Coruna,BundleID,com.jbig.tonkeeper,Tonkeeper module,Google Threat Intelligence Group
+Coruna,SHA256,023e5fb71923cfa2088b9a48ad8566ff7ac92a99630add0629a5edf4679888de,Tonkeeper module (com.jbig.tonkeeper),Google Threat Intelligence Group
+Coruna,BundleID,com.tronlink.hdwallet,TronLink module,Google Threat Intelligence Group
+Coruna,SHA256,f218068ea943a511b230f2a99991f6d1fbc2ac0aec7c796b261e2a26744929ac,TronLink module (com.tronlink.hdwallet),Google Threat Intelligence Group
+Coruna,Codename,buffout,WebContent R/W 13→15.1.1 patched 15.2 (CVE: CVE-2021-30952),Google Threat Intelligence Group
+Coruna,CVE,CVE-2021-30952,Coruna exploit chain buffout,Google Threat Intelligence Group
+Coruna,Codename,jacurutu,WebContent R/W 15.2→15.5 patched 15.6 (CVE: CVE-2022-48503),Google Threat Intelligence Group
+Coruna,CVE,CVE-2022-48503,Coruna exploit chain jacurutu,Google Threat Intelligence Group
+Coruna,Codename,bluebird,WebContent R/W 15.6→16.1.2 patched 16.2 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,terrorbird,WebContent R/W 16.2→16.5.1 patched 16.6 (CVE: CVE-2023-43000),Google Threat Intelligence Group
+Coruna,CVE,CVE-2023-43000,Coruna exploit chain terrorbird,Google Threat Intelligence Group
+Coruna,Codename,cassowary,WebContent R/W 16.6→17.2.1 patched 16.7.5/17.3 (CVE: CVE-2024-23222),Google Threat Intelligence Group
+Coruna,CVE,CVE-2024-23222,Coruna exploit chain cassowary,Google Threat Intelligence Group
+Coruna,Codename,breezy,WebContent PAC bypass 13→14.x (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,breezy15,WebContent PAC bypass 15→16.2 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,seedbell,WebContent PAC bypass 16.3→16.5.1 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,seedbell_16_6,WebContent PAC bypass 16.6→16.7.12 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,seedbell_17,WebContent PAC bypass 17→17.2.1 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,IronLoader,WebContent sandbox escape 16.0→16.3.1/16.4.0(<=A12) patched 15.7.8/16.5 (CVE: CVE-2023-32409),Google Threat Intelligence Group
+Coruna,CVE,CVE-2023-32409,Coruna exploit chain IronLoader,Google Threat Intelligence Group
+Coruna,Codename,NeuronLoader,WebContent sandbox escape 16.4.0→16.6.1(A13-A16) patched 17.0 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,Neutron,PE 13.X patched 14.2 (CVE: CVE-2020-27932),Google Threat Intelligence Group
+Coruna,CVE,CVE-2020-27932,Coruna exploit chain Neutron,Google Threat Intelligence Group
+Coruna,Codename,Dynamo,PE infoleak 13.X patched 14.2 (CVE: CVE-2020-27950),Google Threat Intelligence Group
+Coruna,CVE,CVE-2020-27950,Coruna exploit chain Dynamo,Google Threat Intelligence Group
+Coruna,Codename,Pendulum,PE 14→14.4.x patched 14.7 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,Photon,PE 14.5→15.7.6 patched 15.7.7/16.5.1 (CVE: CVE-2023-32434),Google Threat Intelligence Group
+Coruna,CVE,CVE-2023-32434,Coruna exploit chain Photon,Google Threat Intelligence Group
+Coruna,Codename,Parallax,PE 16.4→16.7 patched 17.0 (CVE: CVE-2023-41974),Google Threat Intelligence Group
+Coruna,CVE,CVE-2023-41974,Coruna exploit chain Parallax,Google Threat Intelligence Group
+Coruna,Codename,Gruber,PE 15.2→17.2.1 patched 16.7.6/17.3 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,Quark,PPL Bypass 13.X patched 14.5 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,Gallium,PPL Bypass 14.x patched 15.7.8/16.6 (CVE: CVE-2023-38606),Google Threat Intelligence Group
+Coruna,CVE,CVE-2023-38606,Coruna exploit chain Gallium,Google Threat Intelligence Group
+Coruna,Codename,Carbone,PPL Bypass 15.0→16.7.6 patched 17.0 (CVE: No CVE),Google Threat Intelligence Group
+Coruna,Codename,Sparrow,PPL Bypass 17.0→17.3 patched 16.7.6/17.4 (CVE: CVE-2024-23225),Google Threat Intelligence Group
+Coruna,CVE,CVE-2024-23225,Coruna exploit chain Sparrow,Google Threat Intelligence Group
+Coruna,Codename,Rocket,PPL Bypass 17.1→17.4 patched 16.7.8/17.5 (CVE: CVE-2024-23296),Google Threat Intelligence Group
+Coruna,CVE,CVE-2024-23296,Coruna exploit chain Rocket,Google Threat Intelligence Group
+Coruna,TTP,Lockdown Mode detection,Coruna bails out if Lockdown Mode or private browsing detected,Google Threat Intelligence Group
+Coruna,TTP,Private browsing detection,Coruna bails out if user is in private browsing,Google Threat Intelligence Group
+Coruna,TTP,Cookie-derived resource URL,Resource URLs derived via sha256(COOKIE+ID)[:40],Google Threat Intelligence Group
+Coruna,TTP,ChaCha20 encrypted binaries,Binary payloads encrypted with ChaCha20 unique key per blob,Google Threat Intelligence Group
+Coruna,TTP,LZW compressed custom format,"Binary payloads in custom format 0xf00dbeef header, LZW compressed",Google Threat Intelligence Group
+Coruna,TTP,Google DNS DGA validation,DGA fallback domains validated via Google public DNS,Google Threat Intelligence Group
+Coruna,FilePath,/private/var/tmp/pl.sp.exec.guard.lock,Temporary Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/tmp/pl.core.lock,Temporary Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/tmp/upgrade.dylib,Temporary Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/tmp/relaunch,Temporary Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/tmp/reinstall,Temporary Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/tmp/stop,Temporary Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/mobile/Library/Preferences/com.apple.photolibraryd.plist,Persistent Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/mobile/Library/Caches/.com.apple.notes.cache.plist,Persistent Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/mobile/Library/Caches/.com.apple.mobileassetd.cache,Persistent Coruna implant artifact,iVerify
+Coruna,FilePath,/private/var/mobile/Library/Preferences/com.apple.photolibraryd.retry.plist,Persistent Coruna implant artifact,iVerify
+Coruna,ThreadName,plasma_core_heartbeat_receiver,Coruna thread/dispatch queue in powerd,iVerify
+Coruna,ThreadName,plasma_supervisor,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,plasma_unified_dispatcher,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,plasma_unified_ipc,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,plasma_heartbeat_monitor,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,helion_ipc_handler,Coruna thread/dispatch queue in locationd/SpringBoard,iVerify
+Coruna,ThreadName,com.plasma.servervalidator.cache,Coruna thread/dispatch queue in imagent/locationd,iVerify
+Coruna,ThreadName,com.plasma.springcore.messagesend,Coruna thread/dispatch queue in SpringBoard,iVerify
+Coruna,ThreadName,com.plasma.heartbeat.callback,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.event.upload.serial,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.corepayload.springboard.retry,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.notes.monitor,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.appruntime.scheduler,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.bundlemapper.concurrent,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.appruntime.modulestore,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.applistreporter.periodic,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.systemstatusreporter.periodic,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.photomonitor,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.appruntime.downloadmanager,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.appruntime.netconfig,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.appruntime.appdiscovery,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.PLProcessStateDetector,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,ThreadName,com.plasma.appruntime.hotupdatemanager,Coruna thread/dispatch queue in locationd,iVerify
+Coruna,LogMessage,"failed lookup: name = com.plasma.springboard.ipc, flags = 0x1, requestor = locationd, error = 3: No such process",Coruna unified log infection indicator,iVerify
+Coruna,User_Agent,"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1",Static User-Agent used by multiple Coruna implants,iVerify
+Coruna,Backup_IOC,98be59db1ad60b6e6e9e9d43442ce1e9e0e17b65,Manifest.db file ID for com.apple.photolibraryd.plist,iVerify
+Packagist Chain,Domain,union.macoms.la,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,cdn.data-2920.com,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,cdn.data-2919.com,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,www.cloudfareintcdn.com,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,yunray.ai,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,cdn1.ai,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,nqsaaskw.com,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,abfedgecanme.com,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,abfdns.com,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,galedns.com,Packagist delivery/exploit infrastructure,Socket Security
+Packagist Chain,Domain,www.0liwevrhxdc3s2xk00.com,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.39rwcybep-20pwozhvdrzzy.net,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.5wg3w278e3oamlohmcinrkh.live,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.dlosdekr1u18msmov51.net,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.ex0x40vmi8qyccxq.net,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.ioa7xqmhiz26fv5e.info,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.isbo31w1o7xk3fztvmgpbv.app,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.jhflt6l0dwminsl494836rb.org,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.kp2-3ur6pe4r8i2hj5.com,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.ljot1cem6jhzfu53yb9aj3h.app,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.ncalb1rzb2rq5-3zdx1.app,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.ov86ayb0fe4ep2b92-645o.com,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.qdh71-y6j7vxgw046v4cvgga.live,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.sx3cjniwo1bmtqs0vlj-va2f.app,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.sx8vuz4smtdol7pg.com,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.t9ffxu6zhf915fadjv1.app,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.vutjsf0sd9sdqt2rkzvgzv9a.org,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.w4iunvbdvjof39q-3.net,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.xtpj2bzxip6iq7n3bnz.info,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,www.zfu4n4kxgmx32hsqg.cc,Packagist exfiltration C2,Socket Security
+Packagist Chain,Domain,1k.wyincc.com,Packagist exploit/C2 domain (SlowMist),SlowMist
+Packagist Chain,Domain,lk.wyincc.com,Packagist exploit/C2 domain (SlowMist),SlowMist
+Packagist Chain,Domain,event.polarnode.vip,Packagist exploit/C2 domain (SlowMist),SlowMist
+Packagist Chain,Domain,polarnode.vip,Packagist exploit/C2 domain (SlowMist),SlowMist
+Packagist Chain,SHA256,89912ab03eb2d02746e52df7b17035082d973234f249098caec11684e665c337,Packagist exploit stage file lk.js,SlowMist
+Packagist Chain,SHA256,892dd644ea9a10fd4d89c54d6cfe1028487c3fc23d3f29723af9004b6edf8c70,Packagist exploit stage file lk.js,SlowMist
+Packagist Chain,SHA256,953cfa9bf94304ad453eab706cd7cc92cde68eb6ea3c85652aa9040609e75f54,Packagist exploit stage file sandbox.html,SlowMist
+Packagist Chain,SHA256,52e2208a37c6dda971c9a67333dbcf526531745feb426a91ace9741ad178f510,Packagist exploit stage file vendor.js,SlowMist
+Packagist Chain,SHA256,a5ebcbd5c744865535dd75d8742c99bc06b548dc2606ac6f116843b54451f73b,Packagist exploit stage file runtime.js,SlowMist
+Packagist Chain,SHA256,afdb430bafc3c441ada98fe4a165fd1ad3a38ff5789517c5dd3f83a143706d53,Packagist exploit stage file runtime-legacy.js,SlowMist
+Packagist Chain,SHA256,f0409f0d1c134be43dcd697b4715cca64efa66e482d252744163f552050cd236,Packagist exploit stage file polyfill.js,SlowMist
+Packagist Chain,SHA256,78973b4d04cb6fee3c399937476347eca0aa9b99fa13596fe9dfaff829aba03b,Packagist exploit stage file framework.js,SlowMist
+Packagist Chain,SHA256,36b43f98c7f4d2d5a0f14ce8a5bdfd2fc055f8628da4a2d9ece2402385447f1e,Packagist exploit stage file framework-legacy.js,SlowMist
+Packagist Chain,SHA256,69e357f06ee87ea934b328c4e701d1d48dcfcef51352bb61c64ef89424c029d8,Packagist exploit stage file common.js,SlowMist
+Packagist Chain,SHA256,693af544eb4deb194f481a870f1202fefb0c278820bb23bced85cd354d29a63e,Packagist exploit stage file common-legacy.js,SlowMist
+Packagist Chain,SHA256,ab356a2bbdbb7f8e9327e10a2cf6d35ca0c4dbba06d982f559b00d13d31f3017,Packagist exploit stage file app.js,SlowMist
+Packagist Chain,SHA256,6eda3586102cf35ca53189accd2f56fec63a8adf74ccf93b59aed1e7651a690f,Packagist exploit stage file sync.js,SlowMist
+Packagist Chain,SHA256,78406a0c68043df99cea87f280e8307675c285ca9d88f5a56aa9901c6f503d11,Packagist exploit stage file auth.js,SlowMist
+Packagist Chain,SHA256,3a2341a13a7c4854bc203be18eebd11f716e043540a91974ef6d6d12253f6c9d,Packagist exploit stage file input.js,SlowMist
+FakeWallet,C2_Artifact,https://iosfc.com/ledger/ios/Rsakeycatch.php,Ledger seed exfiltration endpoint,Kaspersky
+FakeWallet,C2_Artifact,/api/open/postByTokenPocket,Generic FakeWallet seed exfiltration POST path,Kaspersky
+FakeWallet,C2_Artifact,verify-wallet-status.json,Tracks exfiltration status and timestamp,Kaspersky
+FakeWallet,C2_Artifact,verify-wallet-config.json,Stores current C2 configuration,Kaspersky
+FakeWallet,C2_Artifact,verify-wallet-pending.json,Holds encrypted mnemonics until transmitted,Kaspersky
+FakeWallet,Library,libokexHook.dylib,Malicious library injected into Coinbase app to hook RecoveryPhraseViewController,Kaspersky
+FakeWallet,Library,__hook,Custom executable section injected into Trust Wallet main executable,Kaspersky
+FakeWallet,ReactNative_Screen,MnemonicVerifyScreen,Phishing screen embedded in PortfolioNavigator,Kaspersky
+FakeWallet,ReactNative_Screen,PrivateKeyVerifyScreen,Phishing screen embedded in MyLedgerNavigator,Kaspersky
+SparkCat/SparkKitty,BundleID,bigCat.GZIPApp,Malicious framework bundle ID,Kaspersky
+SparkCat/SparkKitty,C2_Domain,api.aliyung.org,SparkCat HTTP C2,Kaspersky
+SparkCat/SparkKitty,C2_Domain,api.aliyung.com:18883,SparkCat Rust/TCP C2,Kaspersky
+SparkCat/SparkKitty,BundleID,com.lc.btdj,ComeCome iOS app bundle ID,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/e/d/u,Device registration/upload endpoint,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/e/config/rekognition,OCR processing parameters endpoint,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/e/config/keyword,Keyword list endpoint,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/e/img/uploadedCheck,Image hash duplicate check,Kaspersky
+SparkCat/SparkKitty,C2_Endpoint,/api/e/img/rekognition,Image link upload endpoint,Kaspersky
+SparkCat/SparkKitty,AES_Key,unique nonce,Hardcoded AES-GCM-SIV nonce in Rust libmodsvmp.so,Kaspersky
+SparkCat/SparkKitty,Library,libmodsvmp.so,Rust native library implementing custom C2 protocol,Kaspersky
+SparkCat/SparkKitty,Class,MMMaker,Downloads config and gathers device info,Kaspersky
+SparkCat/SparkKitty,Class,ApiMgr,Sends device data,Kaspersky
+SparkCat/SparkKitty,Class,PhotoMgr,Searches photos and uploads matching images,Kaspersky
+SparkCat/SparkKitty,Class,MMCore,Stores C2 session info,Kaspersky
+SparkCat/SparkKitty,Class,MMLocationMgr,Collects current device location,Kaspersky
+DarkSword,YARA,G_Backdoor_GHOSTSABER_1,Google Threat Intelligence Group YARA rule,Google Threat Intelligence Group
+DarkSword,YARA,G_Datamine_GHOSTBLADE_1,Google Threat Intelligence Group YARA rule,Google Threat Intelligence Group
+DarkSword,YARA,G_Hunting_DarkSwordExploitChain_ImplantLib_FilePaths_1,Google Threat Intelligence Group YARA rule,Google Threat Intelligence Group
+Coruna,YARA,G_Hunting_Exploit_MapJoinEncoder_1,Google Threat Intelligence Group YARA rule,Google Threat Intelligence Group
+Coruna,YARA,G_Backdoor_PLASMAGRID_Strings_1,Google Threat Intelligence Group YARA rule,Google Threat Intelligence Group
+DarkSword_P7,C2_URL,http://103.226.155.200:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://178.landexuan.site:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://18.118.213.237:8080,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://18.hhpp666.xyz:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://194.59.30.222:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://202.8.120.249:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://66.154.103.112:8080,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://a01.ai-poolion.cc:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://a6cthflpd8xih09.fit:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://ai-poolion.cc:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://bauking.ch:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://c2.ios.catcoinglobal.top:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://darksword.bitbrowserpro.com:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://darksword.botiq.site:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://dsreceiver.onaylarim.com:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://dsw.webtest.eu.cc:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://i1.9kym.com:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://ios.eseu.top:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://ios99.crowdsec.site:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://iosadmin.wanyebao.cn:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://iosqbranch-bzbtegd6efhqbxc4.swedencentral-01.azurewebsites.net:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://solutionsresults.com:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://sqwas.shapelie.com:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,http://zuchee.cn:8882,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://178.landexuan.site:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://18.118.213.237:8080,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://18.hhpp666.xyz:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://194.59.30.222:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://66.154.103.112:8080,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://a01.ai-poolion.cc:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://a6cthflpd8xih09.fit:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://ai-poolion.cc:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://bauking.ch:80,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://c2.ios.catcoinglobal.top:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://darksword.bitbrowserpro.com:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://darksword.botiq.site:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://dsreceiver.onaylarim.com:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://dsw.webtest.eu.cc:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://i1.9kym.com:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://ios.eseu.top:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://ios99.crowdsec.site:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://iosadmin.wanyebao.cn:443,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://iosqbranch-bzbtegd6efhqbxc4.swedencentral-01.azurewebsites.net:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://solutionsresults.com:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://sqwas.shapelie.com:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,C2_URL,https://zuchee.cn:8881,P7 DarkSword C2 URL from iVerify infrastructure list,iVerify
+DarkSword_P7,Domain,cf.r5dz2dz88wuideu.xyz,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,nuih22.cc,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,mollquest.top,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,cdngoogle.vip,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,cdnbing.vip,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,xmkeji.vip,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,yxpf8899.vip,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,supachok.thelazycat.dpdns.org,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,catcoinglobal.top,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,ai-poolion.cc,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,hbwney.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,bitbrowserpro.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,botiq.site,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,webtest.eu.cc,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,9kym.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,eseu.top,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,crowdsec.site,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,wanyebao.cn,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,solutionsresults.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,shapelie.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,zuchee.cn,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,landexuan.site,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,hhpp666.xyz,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,onaylarim.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,trxkk.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,buqiu.site,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,vdvd2026.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,vocc.top,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,ffethy.work,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,global-orions.com,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,hi-metaverse.online,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,luttyd.work,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,noor-alaziz.online,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,sufiok.work,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,Domain,zyydif.work,P7 DarkSword destination/C2 or CDN domain,iVerify
+DarkSword_P7,IP,103.200.125.188,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,103.39.79.232,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,103.73.160.115,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,103.226.155.200,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,103.226.155.201,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,149.88.67.47,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,152.53.169.187,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,156.245.145.11,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,156.252.63.106,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,156.252.63.107,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,156.252.63.108,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,156.252.63.110,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,16.59.214.49,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,162.4.136.30,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,177.2.184.26,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,18.118.213.237,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,192.253.229.191,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,194.59.30.222,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,202.146.222.253,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,202.8.120.249,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,38.190.250.151,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,38.22.89.117,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,38.55.193.43,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,39.104.56.125,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,45.207.210.78,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,47.129.224.84,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,47.74.61.39,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,47.80.242.98,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,51.91.100.96,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,64.81.30.49,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,66.154.103.112,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,8.209.248.215,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,91.208.122.42,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,93.152.221.37,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
+DarkSword_P7,IP,96.ip-51-91-100.eu,P7 DarkSword iframe host or self-hosted C2 IP,iVerify
